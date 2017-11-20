@@ -11,17 +11,27 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding-center>
+
+    <ion-item>
+        <ion-label>Categoria</ion-label>
+        <ion-select [(ngModel)]="categoria" interface="popover">
+          <ion-option value="Bar">Bar</ion-option>
+          <ion-option value="Farmácia">Farmácia</ion-option>
+        </ion-select>
+      </ion-item>
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems">
       <button ion-item (click)="openItem(item)">
-        <ion-avatar item-start>
+        <!-- Nome -->
+          <h2>{{item.name}}</h2>
+        <!-- Categoria -->
+          <p>{{item.about}}</p>
+        <ion-thumbnail item-start>
           <img [src]="item.profilePic" />
-        </ion-avatar>
-        <h2>{{item.name}}</h2>
-        <p>{{item.about}}</p>
-        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+        </ion-thumbnail>        
+        <button ion-button round small>Veja Mais</button>
       </button>
 
       <ion-item-options>
