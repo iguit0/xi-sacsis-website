@@ -7,6 +7,6 @@ import { IonicPage, NavController } from 'ionic-angular';
   templateUrl: 'content.html'
 })
 export class ContentPage {
-  constructor(public navCtrl: NavController) { }
 
+  constructor(public navCtrl: NavController) { }
 }

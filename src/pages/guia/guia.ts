@@ -1,6 +1,6 @@
 import { Items } from './../../mocks/providers/items';
 import { Item } from './../../models/item';
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 
 @IonicPage()
@@ -10,17 +10,15 @@ import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angu
 })
 export class GuiaPage {
   currentItems: Item[];
-  categoria: string;
+  categoria: String = 'bar'; //default value
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public items: Items, public modalCtrl: ModalController) {
     this.currentItems = this.items.query();
-    this.categoria = 'Bar';
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GuiaPage');
   }
-
 
   /**
    * Prompt the user to add a new item. This shows our ItemCreatePage in a

@@ -8,33 +8,19 @@ import { FirstRunPage } from '../pages/pages';
 import { Settings } from '../providers/providers';
 
 @Component({
-  template: `<ion-menu [content]="content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Pages</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
-    <ion-content>
-      <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-          {{p.title}}
-        </button>
-      </ion-list>
-    </ion-content>
-
-  </ion-menu>
-  <ion-nav #content [root]="rootPage"></ion-nav>`
+  templateUrl: `app.html`
 })
 export class MyApp {
   rootPage = FirstRunPage;
+  public pages: Array<{ title: string, component: any}>;
+  @ViewChild('NAV') nav: Nav;
 
-  @ViewChild(Nav) nav: Nav;
-
-  pages: any[] = [
+  constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
+  this.pages = [
     { title: 'Tutorial', component: 'TutorialPage' },
     { title: 'Welcome', component: 'WelcomePage' },
     { title: 'Guia', component: 'GuiaPage' },
+    { title: 'Noticias', component: 'NoticiasPage' },
     { title: 'Cards', component: 'CardsPage' },
     { title: 'Content', component: 'ContentPage' },
     { title: 'Login', component: 'LoginPage' },
@@ -42,9 +28,8 @@ export class MyApp {
     { title: 'Menu', component: 'MenuPage' },
     { title: 'Settings', component: 'SettingsPage' },
     { title: 'Search', component: 'SearchPage' }
-  ]
+  ];
 
-  constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -69,9 +54,10 @@ export class MyApp {
     });
   }
 
-  openPage(page) {
+  openPage(page: {title: string, component: any}): void {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
 }
