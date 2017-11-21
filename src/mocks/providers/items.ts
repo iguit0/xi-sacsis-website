@@ -7,48 +7,47 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "BomBar",
-    "profilePic": "assets/img/speakers/bear.jpg",
-    "about": "Bar",
+    "nome": "Holly Bear",
+    "foto": "assets/img/speakers/bear.jpg",
+    "categoria": "Holly is a Bear"
   };
-
 
   constructor() {
     let items = [
       {
-        "name": "BomBar",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Bar"
+        "nome": "Holly Bear",
+        "foto": "assets/img/speakers/bear.jpg",
+        "categoria": "Holly is a Bear"
       },
       {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "nome": "Charlie Cheetah",
+        "foto": "assets/img/speakers/cheetah.jpg",
+        "categoria": "Charlie is a Cheetah."
       },
       {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "nome": "Donald Duck",
+        "foto": "assets/img/speakers/duck.jpg",
+        "categoria": "Donald is a Duck."
       },
       {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "nome": "Eva Eagle",
+        "foto": "assets/img/speakers/eagle.jpg",
+        "categoria": "Eva is an Eagle."
       },
       {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "nome": "Ellie Elephant",
+        "foto": "assets/img/speakers/elephant.jpg",
+        "categoria": "Ellie is an Elephant."
       },
       {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
+        "nome": "Molly Mouse",
+        "foto": "assets/img/speakers/mouse.jpg",
+        "categoria": "Molly is a Mouse."
       },
       {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "nome": "Paul Puppy",
+        "foto": "assets/img/speakers/puppy.jpg",
+        "categoria": "Paul is a Puppy."
       }
     ];
 

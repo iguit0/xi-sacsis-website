@@ -5,7 +5,7 @@ import { GuiaPage } from './guia';
 
 @NgModule({
   declarations: [
-    GuiaPage,
+    GuiaPage
   ],
   imports: [
     IonicPageModule.forChild(GuiaPage),

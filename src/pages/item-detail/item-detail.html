@@ -1,22 +1,19 @@
 <ion-header>
 
   <ion-navbar color="guia">
-    <ion-title>{{ item.name }}</ion-title>
+    <ion-title>{{ item.nome }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
-  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+  <div class="item-profile" text-center #foto [style.background-image]="'url(' + item.foto + ')'">
   </div>
 
   <div class="item-detail" padding>
-    <h2>{{item.name}}</h2>
-    <p>{{item.about}}</p>
-      <ion-range min="0" max="5" pin="true" [(ngModel)]="contrast" color="secondary">
-        <ion-icon range-left small name="star"></ion-icon>
-        <ion-icon range-right name="star"></ion-icon>
-      </ion-range>
+    <h2>{{item.nome}}</h2>
+    <p>{{item.categoria}}</p>
+    <ion-rating (ionClick)="log($event)"></ion-rating>
   </div>
 </ion-content>
