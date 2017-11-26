@@ -1,4 +1,4 @@
-// http://ionicframework.com/docs/v2/theming/
+// http://ionicframework.com/docs/theming/
 
 
 // App Global Sass
@@ -14,51 +14,3 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
-ion-menu{
-    .header::after{background-image:none;} /*Hide toolbar shadow*/
-     ion-toolbar{
-         .toolbar-background{
-           background: #222;;
-         }
-  
-         .toolbar-content{
-                ion-item{
-                background: transparent;
-                h1{
-                  font-size:1.8rem;
-                  font-weight: bold;
-                  color: white;
-                  font-family: 'Convergence', sans-serif;
-                }
-                p{
-                  font-size:1.3rem;
-                  font-weight: normal;
-                  color:  white;
-                  font-family: 'Convergence', sans-serif;
-                }
-            }
-  
-        }
-      }
-  
-      ion-content{
-                background-color: #222 !important;
-  
-                ion-list{
-                       .item{
-                        text-align: justify;
-                        background: transparent;
-                        font-size: 18px;
-                        color: white;
-                       }
-                       .item-inner{
-                          border-bottom: 2px solid white !important;
-
-                       }
-  
-               }
-        }
-  
-    }
-  

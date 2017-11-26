@@ -1,33 +1,19 @@
-<ion-menu [content]="NAV" type="reveal" swipeEnabled="true">
-        
-          <ion-header>
-            <ion-toolbar>
-              <ion-item no-lines>
-                <ion-avatar item-start>
-                  <img width="80" height="80" src="https://static1.squarespace.com/static/513637cee4b0e2ea417c6ef5/5304bdf1e4b07bcaca2b3964/5304be15e4b020fe6f12cdb5/1392819734396/ari.jpg?format=750w">
-                </ion-avatar>
-                <h1>Olá,</h1>
-                <p>Visitante</p>
-              </ion-item>
-              <ion-buttons end>
-                <button ion-button icon-only>
-                  <ion-icon item-right color="light" name="settings"></ion-icon>
-                </button>
-              </ion-buttons>
-            </ion-toolbar>
-          </ion-header>
-        
-        <ion-content>
-        <img src="http://searchengineland.com/figz/wp-content/seloads/2016/10/E-commerce-Optimization-Tips--600x338.jpg"/>
-        
-        <ion-list no-lines>
-          <button menuClose ion-item *ngFor="let page of pages" (click)="openPage(page)">
-            {{page.title}}
-          </button>
-        </ion-list>
-        
-        
-          </ion-content>
-        </ion-menu>
-        <ion-nav #NAV [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
-        
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
