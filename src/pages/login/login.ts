@@ -1,3 +1,4 @@
+import { SignupPage } from '../signup/signup';
 import { Component,ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -31,7 +32,7 @@ export class LoginPage {
     }
   
     goToSignup() {
-      console.log('Signup clicked');
+      this.navCtrl.setRoot(SignupPage, { animate: true, direction: 'forward' });
     }
   
     goToLogin() {
