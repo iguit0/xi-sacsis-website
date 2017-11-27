@@ -6,15 +6,10 @@ Somos apaixonados por uma das cidades mais lindas de Minas Gerais. Lagoa da Prat
 
 Não só um guia completo com o que tem de melhor na cidade em gastronomia, bares, festas, restaurantes, shows, bem-estar, cultura, turismo e tudo o que nos cerca dia-a-dia, mas um movimento de amor pela nossa cidade. Com um espaço também para notícias da cidade, vagas de emprego, cultura e matérias à respeito de assuntos diversos.
 
-## <a name="getting-started"></a>Getting Started
+## <a name="getting-started"></a>Teste Agora
 
-Para testar, execute no terminal:
+No terminal, faça:
 
 ```bash
 $ ionic serve
 ```
-### Autenticação
-
-O provider `User` é usado para autenticar usuários através dos métodos 
-`login(accountInfo)` e `signup(accountInfo)`, que vai realizar uma
-requisição `POST` para a API na qual você tem de configurar.

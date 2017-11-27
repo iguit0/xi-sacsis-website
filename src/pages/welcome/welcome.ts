@@ -1,5 +1,4 @@
 import { LoginPage } from './../login/login';
-import { HomePage } from './../home/home';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Slides } from 'ionic-angular';
 
@@ -35,7 +34,9 @@ export class WelcomePage {
     }
   ];
 
-  constructor(public navCtrl: NavController) { }
+  constructor(
+    public navCtrl: NavController
+  ) { }
 
   onSlideChanged() {
     this.slideIndex = this.slider.getActiveIndex();
@@ -43,10 +44,10 @@ export class WelcomePage {
   }
 
   goToApp() { 
-    this.navCtrl.setRoot(LoginPage, { animate: true, direction: 'back' });
+    this.navCtrl.setRoot(LoginPage, { direction: 'forward' });
   }
 
   skip() {
-    this.slideIndex = 3;
+    this.slider.slideTo(4);
   }
 }

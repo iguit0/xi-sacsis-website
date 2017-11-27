@@ -1,8 +1,8 @@
 {
   "name": "soumaislagoa_app",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "VisualPixel",
+  "homepage": "http://soumaislagoa.com.br/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
