@@ -1,27 +1,33 @@
-<ion-content padding class="transparent-header">
-  <ion-header>
-    <ion-navbar>
-    </ion-navbar>
-  </ion-header>
-  <img class="logo" src="assets/imgs/welcome/logo.png" />
-  <div padding>
+<ion-header class="signup-header auth-header">
+  <ion-navbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="signup-content auth-content">
+  <h2 class="auth-title">Criar uma conta</h2>
+  <form class="signup-form auth-form" [formGroup]="signup" (ngSubmit)="doSignup()">
     <ion-item>
-      <ion-input type="text" placeholder="Usuário"></ion-input>
+      <ion-input type="email" placeholder="E-mail" formControlName="email"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-input type="password" placeholder="Senha"></ion-input>
-    </ion-item>
-    <button ion-button block outline (click)="login()" color="light" class="login-button">Criar Conta</button>
-  </div>
-  <div class="strike">
-    <span>OU</span>
-  </div>
-  <button ion-button block clear (click)="login()" color="light" class="login-button"><ion-icon name="logo-facebook"></ion-icon> Login with Facebook</button>
+    <show-hide-container>
+      <ion-item>
+        <ion-input type="password" placeholder="Senha" formControlName="password" show-hide-input></ion-input>
+      </ion-item>
+    </show-hide-container>
+    <show-hide-container>
+      <ion-item>
+        <ion-input type="password" placeholder="Confirmar Senha" formControlName="confirm_password" show-hide-input></ion-input>
+      </ion-item>
+    </show-hide-container>
+    <button ion-button block class="auth-action-button signup-button" type="submit" [disabled]="!signup.valid">Cadastrar</button>
+  </form>
+  <p class="auth-divider">
+    OU
+  </p>
+  <button ion-button block class="facebook-auth-button" (click)="doFacebookSignup()">Cadastrar com Facebook</button>
+  <button ion-button block class="google-auth-button" (click)="doGoogleSignup()">Cadastrar com Google</button>
+  <p class="legal-stuff">
+    Criando uma conta você concorda com nossa <a class="legal-action" (click)="showPrivacyModal()">Política de privacidade</a> e <a class="legal-action" (click)="showTermsModal()">Termos de uso.</a>
+  </p>
 </ion-content>
-<ion-footer>
-  <ion-toolbar class="footer">
-    <div (click)="goToLogin()">
-      <span>Já possui uma conta? <strong>Entre aqui</strong>.</span>
-    </div>
-  </ion-toolbar>
-</ion-footer>

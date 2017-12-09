@@ -1,6 +1,8 @@
 {
-  "name": "soumaislagoa_app",
+  "name": "ion2-FullApp-PRO",
   "app_id": "",
-  "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
 }

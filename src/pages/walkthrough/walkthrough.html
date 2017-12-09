@@ -1,0 +1,63 @@
+<ion-header class="walkthrough-header">
+  <ion-toolbar>
+    <ion-buttons end>
+      <button ion-button class="skip-button" (click)="skipIntro()" [hidden]="lastSlide">Pular</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="walkthrough-content">
+  <ion-slides #slider (ionSlideDidChange)="onSlideChanged()" pager="true">
+    <ion-slide class="slide-1">
+      <ion-row class="intro-image-row">
+        <ion-col center width-64 no-padding>
+          <preload-image [ratio]="{w:1, h:1}" src="./assets/images/white_logo.png" alt="app logo" title="SouMaisLagoaLogo"></preload-image>
+        </ion-col>
+      </ion-row>
+      <h2 class="main-title">Bem Vindo(a)!</h2>
+      <p class="intro-text">
+        Este é o novo <b>Sou mais Lagoa!</b><br>Lagoa da Prata agora está na palma de sua mão.
+      </p>
+    </ion-slide>
+    <ion-slide class="slide-2">
+      <ion-row class="intro-image-row">
+        <ion-col center width-64 no-padding>
+          <preload-image [ratio]="{w:1, h:1}" src="./assets/images/slide-2-img.png" alt="slide 2 img" title="ion2FullApp"></preload-image>
+        </ion-col>
+      </ion-row>
+      <h2 class="main-title">Guia</h2>
+      <p class="intro-text">
+        O melhor da cidade em: gastronomia, bares, festas, restaurantes, shows, bem-estar, cultura, turismo e tudo o que nos cerca dia-a-dia.
+      </p>
+    </ion-slide>
+    <ion-slide class="slide-3">
+      <ion-row class="intro-image-row">
+        <ion-col center width-64 no-padding>
+          <preload-image [ratio]="{w:1, h:1}" src="./assets/images/slide-3-img.png" alt="slide 3 img" title="ion2FullApp"></preload-image>
+        </ion-col>
+      </ion-row>
+      <h2 class="main-title">Isso tudo e muito mais</h2>
+      <p class="intro-text">
+        Venha experimentar essa nova experiência!
+      </p>
+    </ion-slide>
+    <ion-slide class="slide-4">
+      <ion-row class="intro-image-row">
+        <ion-col center width-64 no-padding>
+          <preload-image [ratio]="{w:1, h:1}" src="./assets/images/slide-4-img.png" alt="slide 4 img" title="ion2FullApp"></preload-image>
+        </ion-col>
+      </ion-row>
+      <h2 class="main-title">Quase lá!</h2>
+      <p class="intro-text">
+        Entre com sua conta.
+      </p>
+      <p class="intro-text">
+        E aproveite todos os serviços!
+      </p>
+      <div class="button-bar">
+        <button ion-button primary (click)="goToLogin()">Entrar</button>
+        <button ion-button primary (click)="goToSignup()">Cadastrar</button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
