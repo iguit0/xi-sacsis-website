@@ -1,34 +1,19 @@
-## Documentation
-http://bit.ly/ion2fullapp-with-functionalities-documentation
+# App "Sou + Lagoa" :iphone:
+<p align="center">
+<img src="http://soumaislagoa.com.br/wp-content/uploads/2016/04/logo-.jpg" width="400"/></p>
 
-# Workflow
-##To run your app in the browser (great for initial development):
-`ionic serve`
+Somos apaixonados por uma das cidades mais lindas de Minas Gerais. Lagoa da Prata prova que quem diz que Minas não tem praia está muito enganado. Nós temos as melhores pessoas, e aqui cultivamos amizades e momentos inesquecíveis.
 
-##To run on iOS:
-`ionic run ios`
+O Sou + Lagoa é um portal que está sendo desenvolvido para tornar estes momentos cada vez mais frequentes. O Portal servirá também como um guia completo da nossa cidade, funcionamento como uma espécie de catálogo online.
 
-##To run on Android:
-`ionic run android`
+O guia completo do melhor da cidade em: gastronomia, bares, festas, restaurantes, shows, bem-estar, cultura, turismo e tudo o que nos cerca dia-a-dia, mas um movimento de amor pela nossa cidade. Com um espaço também para notícias da cidade, vagas de emprego, cultura e matérias à respeito de assuntos diversos.
 
-##Review ionic CHANGELOG when updating ionic-angular version
-https://github.com/driftyco/ionic/blob/master/CHANGELOG.md
+## <a name="getting-started"></a>Teste Agora :computer:
 
-# Configs
-## Cordova (uses config.xml)
-### [Mass saving platforms on an existing project](http://cordova.apache.org/docs/en/latest/platform_plugin_versioning_ref/index.html#mass-saving-platforms-on-an-existing-project)
-`cordova platform save`
-Use it when you have a pre-existing project and you want to save all the currently added platforms in your project.
+No terminal, faça:
 
-## Ionic (uses package.json)
-### [Clean and install](https://www.raymondcamden.com/2015/04/20/ionic-adds-a-new-state-feature/)
-`ionic state reset`
-This will remove everything then bring back what you have specified in the package.json file.
-
-### [Store current state](https://www.raymondcamden.com/2015/04/20/ionic-adds-a-new-state-feature/)
-`ionic state save`
-To store the current platforms and plugins to the package.json
-
-### [Restore current state](https://www.raymondcamden.com/2015/04/20/ionic-adds-a-new-state-feature/)
-`ionic state restore`
-This will add in the appropriate plugins and platforms from the package.json
+```bash
+$ git clone https://github.com/iguit0/soumaislagoa_app
+$ cd soumaislagoa_app/
+$ ionic serve
+```
