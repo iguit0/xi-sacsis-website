@@ -41,7 +41,7 @@ export class ListingPage {
 
   goToFeed(category: any) {
     console.log("Clicked goToFeed", category);
-    this.nav.push(FeedPage, { category: category });
+    this.nav.setRoot(FeedPage, { category: category });
   }
 
 }
