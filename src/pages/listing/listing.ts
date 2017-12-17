@@ -6,12 +6,13 @@ import 'rxjs/Rx';
 
 import { ListingModel } from './listing.model';
 import { ListingService } from './listing.service';
-
+import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'listing-page',
   templateUrl: 'listing.html',
 })
+
 export class ListingPage {
   listing: ListingModel = new ListingModel();
   loading: any;
@@ -40,8 +41,13 @@ export class ListingPage {
 
 
   goToFeed(category: any) {
-    console.log("Clicked goToFeed", category);
+    //console.log("Clicked goToFeed", category);
+    
     this.nav.setRoot(FeedPage, { category: category });
+  }
+
+  goToGuide(category: ProfilePage){
+      this.nav.setRoot(ProfilePage, { category: 'Guia'});
   }
 
 }
