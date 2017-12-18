@@ -23,3 +23,43 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 @import "../theme/common";
+
+
+// Side Menu with avatar
+ion-menu{
+    .header::after{background-image:none;} /*Hide toolbar shadow*/
+     ion-toolbar{
+         .toolbar-background{
+           background: $theme-color-1;
+         }
+         .toolbar-content{
+                ion-item{
+                background: transparent;
+                h2{
+                  font-size:1.8rem;
+                  font-weight: bold;
+                  color: #fff;
+                  font-family: 'Convergence', sans-serif;
+                }
+                p{
+                  font-size:1.3rem;
+                  font-weight: normal;
+                  color:#fff;
+                  font-family: 'Convergence', sans-serif;
+                }
+                ion-avatar{
+                    background:#b5b5b7;
+                    border-radius:  50%;
+                    text-align: center;
+                    h2{
+                        margin: 0;
+                        font-size:2.1rem;
+                        line-height: 40px;
+                        color: $theme-color-1;
+                    }
+                }
+            }
+        }
+      }
+
+    }

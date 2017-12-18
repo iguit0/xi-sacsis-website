@@ -3,15 +3,21 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
+    <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon item-right name="search"></ion-icon>
+        </button>
+      </ion-buttons>
     <ion-title>
       <div class="header-logo">
-        <preload-image [ratio]="{w:583, h:100}" src="./assets/images/header_logo_white.png"></preload-image>
+        <preload-image [ratio]="{w:583, h:100}" src="./assets/images/header_logo.png"></preload-image>
       </div>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="listing-content">
+  <!-- Banner Size: 412x150 -->
   <background-image class="image-heading" [src]="listing.banner_image"></background-image>
   <h2 class="categories-title">Mais avaliados</h2>
   <ion-scroll scrollX="true" class="horizontal-categories">
