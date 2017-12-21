@@ -1,4 +1,4 @@
-@mixin segment-text-styles($color){
+@mixin segment-text-styles($color) {
 	font-size: 1.6rem;
 	font-weight: 500;
 	color: $color;
@@ -6,38 +6,30 @@
 	text-align: center;
 }
 
-@mixin segment-button-styles($active-color){
-	.segment-button
-	{
+@mixin segment-button-styles($active-color) {
+	.segment-button {
 		border-radius: 0px;
 		border: none;
-
-		&:not(:last-child)
-		{
+		&:not(:last-child) {
 			border-right: solid 2px rgba($white-d, .3);
 		}
-
-		&.segment-activated
-		{
+		&.segment-activated {
 			color: $active-color;
 			background-color: transparent;
 		}
 	}
 }
 
-@mixin segment-button-ios-styles(){
-	.segment-button
-	{
-		&:hover:not(.segment-activated)
-		{
+@mixin segment-button-ios-styles() {
+	.segment-button {
+		&:hover:not(.segment-activated) {
 			background-color: transparent;
 		}
 	}
 }
 
-@mixin segment-button-wp-styles(){
-	.segment-button
-	{
+@mixin segment-button-wp-styles() {
+	.segment-button {
 		flex: 1;
 	}
 }

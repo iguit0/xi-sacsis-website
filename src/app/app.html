@@ -1,22 +1,24 @@
 <ion-menu [content]="content" [swipeEnabled]="false" type="overlay">
-    <ion-header>
-        <ion-toolbar>
-          <ion-item no-lines>
-            <ion-avatar item-left>
-              <h2>V</h2>
-            </ion-avatar>
-            <h2>Olá,</h2>
-            <p>Visitante</p>
-          </ion-item>
-          <ion-buttons end>
-            <button ion-button icon-only *ngFor="let page of pushPages" (click)="pushPage(page)" menuClose>
-              <ion-icon item-right name="settings"></ion-icon>
-            </button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
+  <ion-header>
+    <ion-toolbar>
+      <ion-item no-lines>
+        <ion-avatar item-left>
+          <h2>V</h2>
+        </ion-avatar>
+        <h2>Olá,</h2>
+        <p>Visitante</p>
+      </ion-item>
+      <ion-buttons end>
+        <button ion-button icon-only *ngFor="let page of pushPages" (click)="pushPage(page)" menuClose>
+          <ion-icon item-right name="settings"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
   <ion-content class="menu-content">
-      <ion-avatar item-left><img src="http://soumaislagoa.com.br/wp-content/uploads/2016/04/logo-.jpg"></ion-avatar>
+    <ion-avatar item-left>
+      <img src="http://soumaislagoa.com.br/wp-content/uploads/2016/04/logo-.jpg">
+    </ion-avatar>
     <ion-list class="menu-list">
       <button ion-item detail-none *ngFor="let page of pages" (click)="openPage(page)">
         <ion-icon *ngIf="page.icon" name="{{page.icon}}" item-left></ion-icon>

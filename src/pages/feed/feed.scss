@@ -1,14 +1,9 @@
 feed-page {
-	.feed-content
-	{
+	.feed-content {
 		background-color: color($colors, background, base);
-
-		.feed-item
-		{
+		.feed-item {
 			@include basic-card-styles($white-d);
-
-			.item-title
-			{
+			.item-title {
 				margin: 0px;
 				margin-bottom: 12px;
 				padding: 0px;
