@@ -1,64 +1,44 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav, App } from 'ionic-angular';
-import { StatusBar, Splashscreen } from 'ionic-native';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
-import { FormsPage } from '../pages/forms/forms';
-import { LayoutsPage } from '../pages/layouts/layouts';
 import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
-import { SettingsPage } from '../pages/settings/settings';
-import { FunctionalitiesPage } from '../pages/functionalities/functionalities';
-
+import { GuidePage } from '../pages/guide/guide';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from './../pages/signup/signup';
+import { HomePage } from './../pages/home/home';
 
 @Component({
-  selector: 'app-root',
   templateUrl: 'app.html'
 })
 export class MyApp {
-
-  @ViewChild(Nav) nav: Nav;
-
-  // make WalkthroughPage the root (or first) page
-  // rootPage: any = WalkthroughPage;
-   rootPage: any = TabsNavigationPage;
-
-
-  pages: Array<{title: string, icon: string, component: any}>;
-  pushPages: Array<{title: string, icon: string, component: any}>;
+  @ViewChild('NAV') nav: Nav;
+  rootPage: any;
+  public pages: Array<{ titulo: string, component: any, icon: string}>;
 
   constructor(
-    platform: Platform,
+    platform: Platform, 
+    statusBar: StatusBar, 
+    splashScreen: SplashScreen,
     public menu: MenuController,
     public app: App
   ) {
-    platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      Splashscreen.hide();
-      StatusBar.styleDefault();
-    });
-
+    this.rootPage = HomePage;
     this.pages = [
-      { title: 'Home', icon: 'home', component: TabsNavigationPage },
-      { title: 'Forms', icon: 'create', component: FormsPage },
-      { title: 'Functionalities', icon: 'code', component: FunctionalitiesPage },
-      { title: 'Layouts', icon: 'grid', component: LayoutsPage }
+      { titulo: 'Bem-Vindo',     component: WalkthroughPage,  icon: 'flag'},
+      { titulo: 'Página Inicial',        component: HomePage,     icon: 'home'},
+      { titulo: 'Guia',         component: GuidePage,    icon: 'call'},
+      { titulo: 'Login',         component: LoginPage,    icon: 'paper'}
     ];
-
-    this.pushPages = [
-      { title: 'Settings', icon: 'settings', component: SettingsPage }
-    ];
+      platform.ready().then(() => {
+      statusBar.styleDefault();
+      splashScreen.hide();
+    });
   }
 
-  openPage(page) {
-    this.menu.close();
-    this.nav.push(page.component);
-    //this.nav.setRoot(page.component);
-  }
-
-  pushPage(page) {
-    this.menu.close();
-    this.nav.push(page.component);
+  goToPage(page){
+    this.nav.setRoot(page);
   }
 
 }

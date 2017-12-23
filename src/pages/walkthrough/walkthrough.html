@@ -1,9 +1,11 @@
-<ion-header class="walkthrough-header">
-  <ion-toolbar>
-    <ion-buttons end>
-      <button ion-button class="skip-button" (click)="skipIntro()" [hidden]="lastSlide">Pular</button>
-    </ion-buttons>
-  </ion-toolbar>
+<ion-header no-border class="walkthrough-header">
+  <ion-navbar transparent>
+    <ion-toolbar>
+      <ion-buttons end>
+        <button ion-button class="skip-button" (click)="skipIntro()" [hidden]="lastSlide">Pular</button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-navbar>
 </ion-header>
 
 <ion-content class="walkthrough-content">
@@ -11,7 +13,8 @@
     <ion-slide class="slide-1">
       <ion-row class="intro-image-row">
         <ion-col center width-64 no-padding>
-          <preload-image [ratio]="{w:1, h:1}" src="./assets/images/white_logo.png" alt="app logo" title="SouMaisLagoaLogo"></preload-image>
+          <preload-image [ratio]="{w:1, h:1}" src="https://github.com/iguit0/soumaislagoa_app/blob/master/src/assets/images/white_logo.png?raw=true"
+            alt="app logo" title="SouMaisLagoaLogo"></preload-image>
         </ion-col>
       </ion-row>
       <h2 class="main-title">Bem Vindo(a)!</h2>
@@ -24,7 +27,8 @@
     <ion-slide class="slide-2">
       <ion-row class="intro-image-row">
         <ion-col center width-64 no-padding>
-          <preload-image [ratio]="{w:1, h:1}" src="./assets/images/slide-2-img.png" alt="slide 2 img" title="ion2FullApp"></preload-image>
+          <preload-image [ratio]="{w:1, h:1}" src="https://github.com/iguit0/soumaislagoa_app/blob/master/src/assets/images/slide-2-img.png?raw=true"
+            alt="slide 2 img" title="Imagem Slide 2"></preload-image>
         </ion-col>
       </ion-row>
       <h2 class="main-title">Guia, Notícias, Agenda, Eventos</h2>
@@ -36,7 +40,8 @@
     <ion-slide class="slide-3">
       <ion-row class="intro-image-row">
         <ion-col center width-64 no-padding>
-          <preload-image [ratio]="{w:1, h:1}" src="./assets/images/slide-3-img.png" alt="slide 3 img" title="ion2FullApp"></preload-image>
+          <preload-image [ratio]="{w:1, h:1}" src="https://github.com/iguit0/soumaislagoa_app/blob/master/src/assets/images/slide-3-img.png?raw=true"
+            alt="slide 3 img" title="Imagem Slide 3"></preload-image>
         </ion-col>
       </ion-row>
       <h2 class="main-title">Isso tudo e muito mais</h2>
@@ -47,7 +52,8 @@
     <ion-slide class="slide-4">
       <ion-row class="intro-image-row">
         <ion-col center width-64 no-padding>
-          <preload-image [ratio]="{w:1, h:1}" src="./assets/images/slide-4-img.png" alt="slide 4 img" title="ion2FullApp"></preload-image>
+          <preload-image [ratio]="{w:1, h:1}" src="https://github.com/iguit0/soumaislagoa_app/blob/master/src/assets/images/slide-4-img.png?raw=true"
+            alt="slide 4 img" title="Imagem Slide 4"></preload-image>
         </ion-col>
       </ion-row>
       <h2 class="main-title">Quase lá!</h2>

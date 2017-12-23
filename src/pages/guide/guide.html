@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Guide</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="list-big-content">
+  <div class="list-big">
+    <ion-list>
+      <button class="list-item" ion-item *ngFor="let c of countries">
+        <ion-row no-padding class="content-row">
+          <ion-col no-padding width-33 class="item-avatar">
+            <preload-image class="avatar-image" [ratio]="{w:1, h:1}" [src]="c.flag"></preload-image>
+          </ion-col>
+          <ion-col no-padding width-57 class="item-content">
+            <h3 class="item-title">{{c.name}}</h3>
+            <p class="item-description" rows="3">Capital: {{c.capital}}<br>Region: {{c.region}}</p>
+            <!-- You can change the rows quantity by using rows="X", where X can be any number for example: rows="4" -->
+          </ion-col>
+          <ion-col no-padding width-10 class="item-icon">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </button>
+    </ion-list>
+  </div>
+</ion-content>

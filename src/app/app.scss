@@ -1,14 +1,6 @@
-// http://ionicframework.com/docs/v2/theming/
-
-// App Shared Imports
-// --------------------------------------------------
-// These are the imports which make up the design of this app.
-// By default each design mode includes these shared imports.
-// App Shared Sass variables belong in app.variables.scss.
-
-// Include Bourbon
-@import "_bourbon";
-
+// http://ionicframework.com/docs/theming/
+// Includ Bourbon (Sass Framework)
+@import "../node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -24,42 +16,46 @@
 // automatically applied to the <body> element in the app.
 @import "../theme/common";
 
-
+ion-title{
+  font-family: 'Convergence',sans-serif;
+}
 // Side Menu with avatar
-ion-menu{
-    .header::after{background-image:none;} /*Hide toolbar shadow*/
-     ion-toolbar{
-         .toolbar-background{
-           background: $theme-color-1;
-         }
-         .toolbar-content{
-                ion-item{
-                background: transparent;
-                h2{
-                  font-size:1.8rem;
-                  font-weight: bold;
-                  color: #fff;
-                  font-family: 'Convergence', sans-serif;
-                }
-                p{
-                  font-size:1.3rem;
-                  font-weight: normal;
-                  color:#fff;
-                  font-family: 'Convergence', sans-serif;
-                }
-                ion-avatar{
-                    background:#b5b5b7;
-                    border-radius:  50%;
-                    text-align: center;
-                    h2{
-                        margin: 0;
-                        font-size:2.1rem;
-                        line-height: 40px;
-                        color: $theme-color-1;
-                    }
-                }
-            }
+ion-menu {
+  .header::after {
+    background-image: none;
+  }
+  /*Hide toolbar shadow*/
+  ion-toolbar {
+    .toolbar-background {
+      background: $theme-color-1;
+    }
+    .toolbar-content {
+      ion-item {
+        background: transparent;
+        h2 {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: #fff;
+          font-family: 'Convergence', sans-serif;
+        }
+        p {
+          font-size: 1.3rem;
+          font-weight: normal;
+          color: #fff;
+          font-family: 'Convergence', sans-serif;
+        }
+        ion-avatar {
+          background: #b5b5b7;
+          border-radius: 50%;
+          text-align: center;
+          h2 {
+            margin: 0;
+            font-size: 2.1rem;
+            line-height: 40px;
+            color: $theme-color-1;
+          }
         }
       }
-
     }
+  }
+}

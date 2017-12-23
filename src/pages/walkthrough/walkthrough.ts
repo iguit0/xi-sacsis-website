@@ -1,21 +1,18 @@
-import { Component, ViewChild } from '@angular/core';
-import { NavController, Slides } from 'ionic-angular';
-
+import { SignupPage } from './../signup/signup';
+import { Component,ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams,Slides } from 'ionic-angular';
 import { LoginPage } from '../login/login';
-import { SignupPage } from '../signup/signup';
 
+@IonicPage()
 @Component({
-  selector: 'walkthrough-page',
-  templateUrl: 'walkthrough.html'
+  selector: 'page-walkthrough',
+  templateUrl: 'walkthrough.html',
 })
 export class WalkthroughPage {
-
   lastSlide = false;
-
   @ViewChild('slider') slider: Slides;
 
-  constructor(public nav: NavController) {
-
+  constructor(public nav: NavController, public navParams: NavParams) {
   }
 
   skipIntro() {
@@ -39,4 +36,5 @@ export class WalkthroughPage {
   goToSignup() {
     this.nav.push(SignupPage);
   }
+
 }

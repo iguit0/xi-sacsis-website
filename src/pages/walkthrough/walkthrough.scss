@@ -1,4 +1,4 @@
-walkthrough-page {
+page-walkthrough {
 	.walkthrough-header {
 		@include header-styles(color($colors, walkthrough-header, base), color($colors, walkthrough-header, contrast));
 	}

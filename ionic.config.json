@@ -1,8 +1,6 @@
 {
-  "name": "Sou + Lagoa",
+  "name": "soumaislagoa_app",
   "app_id": "",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {}
 }
