@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { PreloadImageComponent } from '../components/preload-image/preload-image';
 import { RatingComponent } from './../components/rating/rating';
+import { BackgroundImageComponent } from './../components/background-image/background-image';
 
 import { MyApp } from './app.component';
 import { SignupPage } from '../pages/signup/signup';
@@ -29,7 +30,8 @@ import { WalkthroughPage } from './../pages/walkthrough/walkthrough';
     ForgotpasswordPage,
 
     PreloadImageComponent,
-    RatingComponent
+    RatingComponent,
+    BackgroundImageComponent
   ],
   imports: [
     BrowserModule,
