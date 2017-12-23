@@ -2,7 +2,6 @@
 	.rating-item {
 		padding: 0px;
 		border: none !important;
-		@include element-shadow();
 		.item-inner {
 			padding: 0px;
 			border: none;
@@ -24,7 +23,7 @@
 				padding-right: 11px;
 				.rating-icon ion-icon {
 					color: $value-color;
-					font-size: 1.8em;
+					font-size: 1.5em; //default: 1.8em
 				}
 			}
 		}

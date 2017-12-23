@@ -24,7 +24,7 @@ export class MyApp {
     public menu: MenuController,
     public app: App
   ) {
-    this.rootPage = HomePage;
+    this.rootPage = WalkthroughPage;
     this.pages = [
       { titulo: 'Bem-Vindo',     component: WalkthroughPage,  icon: 'flag'},
       { titulo: 'Página Inicial',        component: HomePage,     icon: 'home'},

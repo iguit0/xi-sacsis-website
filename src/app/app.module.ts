@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http'
 
 import { PreloadImageComponent } from '../components/preload-image/preload-image';
+import { RatingComponent } from './../components/rating/rating';
 
 import { MyApp } from './app.component';
 import { SignupPage } from '../pages/signup/signup';
@@ -27,7 +28,8 @@ import { WalkthroughPage } from './../pages/walkthrough/walkthrough';
     WalkthroughPage,
     ForgotpasswordPage,
 
-    PreloadImageComponent
+    PreloadImageComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

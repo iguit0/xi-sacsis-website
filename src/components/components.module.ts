@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadImageComponent } from './preload-image/preload-image';
+import { RatingComponent } from './rating/rating';
 
 @NgModule({
-	declarations: [PreloadImageComponent],
+	declarations: [PreloadImageComponent,
+    RatingComponent],
 	imports: [],
-	exports: [PreloadImageComponent]
+	exports: [PreloadImageComponent,
+    RatingComponent]
 })
 export class ComponentsModule {}
