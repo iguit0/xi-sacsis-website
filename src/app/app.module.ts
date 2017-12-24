@@ -13,6 +13,7 @@ import { BackgroundImageComponent } from './../components/background-image/backg
 
 // Providers
 import { GuideProvider } from '../providers/guide/guide';
+import { HomeProvider } from '../providers/home/home';
 
 // Pages
 import { SignupPage } from '../pages/signup/signup';
@@ -62,7 +63,8 @@ import { CalendarPage } from './../pages/calendar/calendar';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    GuideProvider
+    GuideProvider,
+    HomeProvider
   ]
 })
 export class AppModule {}

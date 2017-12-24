@@ -5,8 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
 import { GuidePage } from '../pages/guide/guide';
-import { LoginPage } from '../pages/login/login';
-import { SignupPage } from './../pages/signup/signup';
 import { HomePage } from './../pages/home/home';
 import { NewsPage } from './../pages/news/news';
 import { CalendarPage } from './../pages/calendar/calendar';
