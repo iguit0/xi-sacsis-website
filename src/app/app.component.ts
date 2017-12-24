@@ -8,6 +8,8 @@ import { GuidePage } from '../pages/guide/guide';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from './../pages/signup/signup';
 import { HomePage } from './../pages/home/home';
+import { NewsPage } from './../pages/news/news';
+import { CalendarPage } from './../pages/calendar/calendar';
 
 @Component({
   templateUrl: 'app.html'
@@ -29,7 +31,8 @@ export class MyApp {
       { titulo: 'Bem-Vindo',     component: WalkthroughPage,  icon: 'flag'},
       { titulo: 'Página Inicial',        component: HomePage,     icon: 'home'},
       { titulo: 'Guia',         component: GuidePage,    icon: 'call'},
-      { titulo: 'Login',         component: LoginPage,    icon: 'paper'}
+      { titulo: 'Notícias',         component: NewsPage,    icon: 'paper'},
+      { titulo: 'Agenda',         component: CalendarPage,    icon: 'calendar'}
     ];
       platform.ready().then(() => {
       statusBar.styleDefault();
