@@ -15,5 +15,6 @@ No terminal, faça:
 ```bash
 $ git clone https://github.com/iguit0/soumaislagoa_app
 $ cd soumaislagoa_app/
+$ npm install
 $ ionic serve
 ```
