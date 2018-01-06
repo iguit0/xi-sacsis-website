@@ -6,7 +6,7 @@ import { isPresent } from 'ionic-angular/util/util';
   selector: 'preload-image',
   templateUrl: 'preload-image.html'
 })
-export class PreloadImageComponent implements OnChanges {
+export class PreloadImage implements OnChanges {
 	_src: string = '';
 	_ratio: { w: number, h: number };
   _img: any;

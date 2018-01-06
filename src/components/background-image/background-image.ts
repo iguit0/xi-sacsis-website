@@ -1,11 +1,12 @@
 import { Component, Input, ElementRef, Renderer, OnChanges, SimpleChange } from '@angular/core';
+
 import { isPresent } from 'ionic-angular/util/util';
 
 @Component({
   selector: 'background-image',
   templateUrl: 'background-image.html'
 })
-export class BackgroundImageComponent implements OnChanges {
+export class BackgroundImage implements OnChanges {
 	_src: string = '';
 
 	constructor(public _elementRef: ElementRef, public _renderer: Renderer) {}
@@ -38,7 +39,4 @@ export class BackgroundImageComponent implements OnChanges {
 	_loaded(isLoaded: boolean) {
     this._elementRef.nativeElement.classList[isLoaded ? 'add' : 'remove']('img-loaded');
   }
-
 }
-
-

@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "Crossfit WorldWide Event",
+      "image": "./assets/images/lists/200x200EventCrossfit.png",
+      "category": "Bar",
+      "rating": 2.5
+    },
+    {
+      "name": "US Open",
+      "image": "./assets/images/lists/200x200EventUSOpen.png",
+      "category": "Restaurante",
+      "rating": 2.5
+    },
+    {
+      "name": "The Basketball Tournament",
+      "image": "./assets/images/lists/200x200TBT.png",
+      "category": "Farmácia",
+      "rating": 2.5
+    },
+    {
+      "name": "British Open",
+      "image": "./assets/images/lists/200x200BritishOpen.png",
+      "category": "Academia",
+      "rating": 2.5
+    },
+    {
+      "name": "FIFA World Cup",
+      "image": "./assets/images/lists/200x200FIFA.png",
+      "category": "Alimentação",
+      "rating": 2.5
+    }
+  ]
+}

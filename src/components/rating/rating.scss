@@ -1,7 +1,8 @@
 rating {
-	//@include display(flex);
+	@include display(flex);
 	@include justify-content(flex-end);
-	@include align-items(left);
+	@include align-items(center);
+
 	[ion-button].rating-icon
 	{
 		flex: 1;

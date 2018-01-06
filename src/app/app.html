@@ -22,9 +22,9 @@
   <ion-content class="menu-content">
     <ion-avatar item-left>
       <img src="http://soumaislagoa.com.br/wp-content/uploads/2016/04/logo-.jpg">
-    </ion-avatar>
+      </ion-avatar>
     <ion-list class="menu-list">
-      <button ion-item detail-none *ngFor="let page of pages" (click)="goToPage(page.component)" menuClose>
+      <button ion-item detail-none *ngFor="let page of pages" (click)="openPage(page.component)" menuClose>
         <ion-icon item-left name="{{page.icon}}"></ion-icon>
         {{page.titulo}}
       </button>

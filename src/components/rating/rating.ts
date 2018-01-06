@@ -1,11 +1,11 @@
-import { Component, forwardRef,Input } from '@angular/core';
+import { Component, forwardRef, Input } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
 const noop = () => {};
 
 export const RATING_CONTROL_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => RatingComponent),
+  useExisting: forwardRef(() => Rating),
   multi: true
 };
 
@@ -14,7 +14,7 @@ export const RATING_CONTROL_VALUE_ACCESSOR: any = {
   templateUrl: 'rating.html',
   providers: [RATING_CONTROL_VALUE_ACCESSOR]
 })
-export class RatingComponent implements ControlValueAccessor {
+export class Rating implements ControlValueAccessor {
 
   @Input() max = 5;
   @Input('read-only') readOnly = false;
