@@ -1,7 +1,7 @@
 {
-  "name": "ion2-fullapp-PRO",
-  "author": "Ionic Themes",
-  "homepage": "https://ionicthemes.com",
+  "name": "SouMaisLagoa",
+  "author": "Igor Alves",
+  "homepage": "http://soumaislagoa.com.br/",
   "private": true,
   "scripts": {
     "ionic:build": "ionic-app-scripts build",
