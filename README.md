@@ -1,4 +1,4 @@
-# App "Sou + Lagoa" :iphone:
+# App Sou + Lagoa :iphone:
 <p align="center">
 <img src="http://soumaislagoa.com.br/wp-content/uploads/2016/04/logo-.jpg" width="400"/></p>
 
