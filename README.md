@@ -1,8 +1,8 @@
-# QuickLife
+# QuickLife :handbag::department_store:
 
-<p align="center"><img src="http://imagem.b2s-space.com/upimg/60505/0/5ec826b5db.jpg"/></p>
+<p align="center"><img align="center" width="500" height="200" src="http://imagem.b2s-space.com/upimg/60505/0/54691e2e7d.jpg"></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*[Project API :wrench:](https://github.com/mlopesc/quicklife_api)*
 
 ## Available Scripts
 
