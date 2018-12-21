@@ -1,3 +1,7 @@
+# QuickLife
+
+<p align="center"><img src="http://imagem.b2s-space.com/upimg/60505/0/5ec826b5db.jpg"/></p>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
