@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Form, Container } from "./styles";
+
+import Logo from "../../assets/logo.svg";
 
 class SignIn extends Component {
   constructor(props) {
@@ -11,42 +14,39 @@ class SignIn extends Component {
     };
   }
 
-  signIn() {
+  handleSignIn = e => {
+    e.preventDefault();
     console.log("signIn", this.state);
-  }
+    const { email, password } = this.state;
+    if (!email || !password) {
+      this.setState({ error: "Preencha e-mail e senha para continuar" });
+    } else {
+      this.props.history.push("/home");
+    }
+  };
 
   render() {
     return (
-      <div className="form-inline" style={{ margin: "5%" }}>
-        <h2>Login</h2>
-        <div className="form-group">
+      <Container>
+        <Form onSubmit={this.handleSignIn}>
+          <img src={Logo} alt="QuickLife logo" />
+          <h2>Login</h2>
+          {this.state.error && <p>{this.state.error}</p>}
           <input
-            style={{ marginRight: "5px" }}
-            className="form-control"
-            type="text"
+            type="email"
             placeholder="E-mail"
-            onChange={event => this.setState({ email: event.target.value })}
+            onChange={e => this.setState({ email: e.target.value })}
           />
           <input
-            style={{ marginRight: "5px" }}
-            className="form-control"
             type="password"
             placeholder="Senha"
-            onChange={event => this.setState({ password: event.target.value })}
+            onChange={e => this.setState({ password: e.target.value })}
           />
-          <button
-            className="btn btn-primary"
-            type="button"
-            onClick={() => this.signIn()}
-          >
-            Entrar
-          </button>
-        </div>
-        <div>{this.state.error.message}</div>
-        <div style={{ marginTop: "15px" }}>
-          <Link to={"/registrar"}>Não tem conta? Cadastre-se agora mesmo!</Link>
-        </div>
-      </div>
+          <button type="submit">Entrar</button>
+          <hr />
+          <Link to="/registrar">Não tem conta? Registre-se agora!</Link>
+        </Form>
+      </Container>
     );
   }
 }
