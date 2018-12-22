@@ -4,20 +4,12 @@
 
 _[Project API :wrench:](https://github.com/mlopesc/quicklife_api)_
 
-> Organização da estrutura do projeto:
-> src/
-> |--- assets/ # Aqui ficará as imagens, etc.
-> |--- configs/ # Variáveis de configurações
-> |--- pages/ # As nossas páginas (componentes)
-> |--- services/ # Configuração de serviços (API) utilizados
-> |--- styles/ # Estilos globais
-> |--- App.js # Arquivo que conterá configurações principais do App
-> |--- index.js # Ponto de entrada para execução do nosso App
-> |--- routes.js # Arquivo contendo as principais rotas do App
+## Estrutura de Pastas :open_file_folder:
+<p align="center"><img src="http://imagem.b2s-space.com/upimg/60505/0/05caa0d9b6.jpg"/></p>
 
-## Available Scripts
+## Comandos disponíveis :computer:
 
-In the project directory, you can run:
+Dentro do diretório do projeto, você pode rodar:
 
 ### `npm start`
 
@@ -26,11 +18,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -52,8 +39,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Learn More :book:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este projeto foi baseado no projeto [Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para saber mais sobre React, sua documentação se encontra disponível [neste endereço](https://reactjs.org/).
