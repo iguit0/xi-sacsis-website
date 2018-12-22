@@ -2,7 +2,18 @@
 
 <p align="center"><img align="center" width="500" height="200" src="http://imagem.b2s-space.com/upimg/60505/0/54691e2e7d.jpg"></p>
 
-*[Project API :wrench:](https://github.com/mlopesc/quicklife_api)*
+_[Project API :wrench:](https://github.com/mlopesc/quicklife_api)_
+
+> Organização da estrutura do projeto:
+> src/
+> |--- assets/ # Aqui ficará as imagens, etc.
+> |--- configs/ # Variáveis de configurações
+> |--- pages/ # As nossas páginas (componentes)
+> |--- services/ # Configuração de serviços (API) utilizados
+> |--- styles/ # Estilos globais
+> |--- App.js # Arquivo que conterá configurações principais do App
+> |--- index.js # Ponto de entrada para execução do nosso App
+> |--- routes.js # Arquivo contendo as principais rotas do App
 
 ## Available Scripts
 
