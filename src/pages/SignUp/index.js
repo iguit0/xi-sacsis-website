@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/react.svg";
 import { Form, Container } from "./styles";
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 
@@ -31,6 +31,7 @@ class SignUp extends Component {
             placeholder="E-mail"
             onChange={e => this.setState({ email: e.target.value })}
           />
+          <Input type="text" placeholder="Usuário" />
           <InputGroup className="mb-3">
             {this.state.show ? (
               <Input

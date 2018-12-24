@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Form, Container } from "./styles";
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/react.svg";
 
 class SignIn extends Component {
   constructor(props) {
