@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // Components
-import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
+import Home from "./pages/home";
+import NotFound from "./pages/root/notfound";
+import SignIn from "./pages/signin";
+import SignUp from "./pages/signup";
 
 const Routes = () => (
   <BrowserRouter>
