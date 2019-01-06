@@ -1,7 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
+// from node_modules
 import "font-awesome/css/font-awesome.css";
 import "bootstrap/dist/css/bootstrap.css";
+
+// from assets/css
+import '../assets/css/style.css';
+import '../assets/css/helper.min.css';
 
 createGlobalStyle`
 * {

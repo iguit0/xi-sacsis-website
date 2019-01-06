@@ -1,12 +1,16 @@
 import React from "react";
 import Routes from "./routes";
-import Header from './pages/root/header';
 import "./styles/global";
+
+// Root components
+import Header from './pages/root/header';
+import Footer from './pages/root/footer';
 
 const App = () => (
     <div>
-        <Header/>
+        <Header />
         <Routes />
+        <Footer />
     </div>
 );
 
