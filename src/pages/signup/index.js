@@ -4,10 +4,10 @@ import Logo from "../../assets/react.svg";
 import { Form, Container } from "./styles";
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 
-class SignUp extends Component {
+export default class SignUp extends Component {
   constructor(props) {
     super(props);
-    this.state = { show: false, email: "", password: "", error: "" };
+    this.state = { show: false, email: "", password: "", confirmPassword: "", error: "" };
   }
 
   handleSignUp = e => {
@@ -40,12 +40,12 @@ class SignUp extends Component {
                 onChange={e => this.setState({ password: e.target.value })}
               />
             ) : (
-              <Input
-                type="password"
-                placeholder="Senha"
-                onChange={e => this.setState({ password: e.target.value })}
-              />
-            )}
+                <Input
+                  type="password"
+                  placeholder="Senha"
+                  onChange={e => this.setState({ password: e.target.value })}
+                />
+              )}
             <InputGroupAddon
               addonType="append"
               onClick={() => this.togglePass()}
@@ -54,8 +54,35 @@ class SignUp extends Component {
                 {this.state.show ? (
                   <i className="fa fa-eye" />
                 ) : (
-                  <i className="fa fa-eye-slash" />
-                )}
+                    <i className="fa fa-eye-slash" />
+                  )}
+              </InputGroupText>
+            </InputGroupAddon>
+          </InputGroup>
+          <InputGroup className="mb-3">
+            {this.state.show ? (
+              <Input
+                type="text"
+                placeholder="Confirmar Senha"
+                onChange={e => this.setState({ confirmPassword: e.target.value })}
+              />
+            ) : (
+                <Input
+                  type="password"
+                  placeholder="Confirmar Senha"
+                  onChange={e => this.setState({ confirmPassword: e.target.value })}
+                />
+              )}
+            <InputGroupAddon
+              addonType="append"
+              onClick={() => this.togglePass()}
+            >
+              <InputGroupText>
+                {this.state.show ? (
+                  <i className="fa fa-eye" />
+                ) : (
+                    <i className="fa fa-eye-slash" />
+                  )}
               </InputGroupText>
             </InputGroupAddon>
           </InputGroup>
@@ -67,5 +94,3 @@ class SignUp extends Component {
     );
   }
 }
-
-export default SignUp;

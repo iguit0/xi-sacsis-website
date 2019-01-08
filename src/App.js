@@ -7,7 +7,7 @@ import Header from './pages/root/header';
 import Footer from './pages/root/footer';
 
 const App = () => (
-    <div>
+    <div className="App">
         <Header />
         <Routes />
         <Footer />

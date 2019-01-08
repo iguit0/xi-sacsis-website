@@ -4,10 +4,6 @@ import { createGlobalStyle } from "styled-components";
 import "font-awesome/css/font-awesome.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-// from assets/css
-import '../assets/css/style.css';
-import '../assets/css/helper.min.css';
-
 createGlobalStyle`
 * {
   box-sizing: border-box;

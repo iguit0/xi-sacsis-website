@@ -4,7 +4,7 @@ import { Form, Container } from "./styles";
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 import Logo from "../../assets/react.svg";
 
-class SignIn extends Component {
+export default class SignIn extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -50,12 +50,12 @@ class SignIn extends Component {
                 onChange={e => this.setState({ password: e.target.value })}
               />
             ) : (
-              <Input
-                type="password"
-                placeholder="Senha"
-                onChange={e => this.setState({ password: e.target.value })}
-              />
-            )}
+                <Input
+                  type="password"
+                  placeholder="Senha"
+                  onChange={e => this.setState({ password: e.target.value })}
+                />
+              )}
             <InputGroupAddon
               addonType="append"
               onClick={() => this.togglePass()}
@@ -64,8 +64,8 @@ class SignIn extends Component {
                 {this.state.show ? (
                   <i className="fa fa-eye" />
                 ) : (
-                  <i className="fa fa-eye-slash" />
-                )}
+                    <i className="fa fa-eye-slash" />
+                  )}
               </InputGroupText>
             </InputGroupAddon>
           </InputGroup>
@@ -77,5 +77,3 @@ class SignIn extends Component {
     );
   }
 }
-
-export default SignIn;

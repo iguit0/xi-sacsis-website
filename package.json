@@ -1,6 +1,11 @@
 {
   "name": "quicklife",
   "version": "0.1.0",
+  "author": {
+    "name": "Igor Alves",
+    "email": "igorsk89@gmail.com",
+    "url": "https://github.com/iguit0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/iguit0/quicklife.git"
@@ -12,10 +17,11 @@
     "font-awesome": "^4.7.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
+    "react-bootstrap": "^1.0.0-beta.3",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^2.1.3",
     "reactstrap": "^6.5.0",
     "redux": "^4.0.1",
     "styled-components": "^4.1.3"

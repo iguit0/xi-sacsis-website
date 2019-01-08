@@ -1,46 +1,46 @@
-# QuickLife :handbag::department_store:
+# Quick Life :handbag::department_store:
 
 <p align="center"><img align="center" width="500" height="200" src="http://imagem.b2s-space.com/upimg/60505/0/54691e2e7d.jpg"></p>
 
-_[Project API :wrench:](https://github.com/mlopesc/quicklife_api)_
+_[API do Projeto :wrench:](https://github.com/mlopesc/quicklife_api)_
+
+1. Projeto desenvolvido com as versões :nut_and_bolt: 
+   1. [node](https://nodejs.org/en/): v8.11.3
+   1. [react](https://reactjs.org/): v16.7.0
+   1. [react-bootstrap](https://react-bootstrap.netlify.com/): v1.0.0-beta.3
+   1. [styled-components](https://www.styled-components.com/): v4.1.3
 
 ## Estrutura de Pastas :open_file_folder:
 <p align="center"><img src="http://imagem.b2s-space.com/upimg/60505/0/05caa0d9b6.jpg"/></p>
 
 ## Comandos disponíveis :computer:
 
-Dentro do diretório do projeto, você pode rodar:
+Dentro do diretório do projeto, você deve rodar:
 
-### `npm start`
+### 1. `npm install`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Instala todas as dependências necessárias do projeto. :wrench:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### 2. `npm start`
 
-### `npm run build`
+Inicia o app em modo de desenvolvimento :computer: <br/>
+Abra [http://localhost:3000](http://localhost:3000) para visualizar no seu navegador.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*OBS: A página recarrega se você faz edições* :blush:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### (Opcional) 3. `npm run build`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*"Builda"* o app para produção. :satellite:<br/>
+Após o término do processamento, checar a pasta `build`.<br/>
+Ele agrupa corretamente o React em modo de produção e otimiza o *build* para obter o melhor desempenho.
 
-### `npm run eject`
+A compilação é minificada e os nomes dos arquivos incluem os respectivos *hashes*. <br/>
+Seu aplicativo está pronto para *deploy*! :cloud:<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Referências :book:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Este projeto foi construído utilizando a ferramenta [Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para saber mais sobre *React*, sua documentação se encontra disponível [neste endereço](https://reactjs.org/).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More :book:
-
-Este projeto foi baseado no projeto [Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
-
-Para saber mais sobre React, sua documentação se encontra disponível [neste endereço](https://reactjs.org/).
+Para saber mais sobre o *deploy* e otimização, [leia mais aqui](https://facebook.github.io/create-react-app/docs/deployment).
