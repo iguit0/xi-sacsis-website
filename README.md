@@ -1,7 +1,5 @@
 # Quick Life :handbag::department_store:
 
-<p align="center"><img align="center" width="500" height="200" src="http://imagem.b2s-space.com/upimg/60505/0/54691e2e7d.jpg"></p>
-
 _[API do Projeto :wrench:](https://github.com/mlopesc/quicklife-api)_
 
 1. Projeto desenvolvido com as versões :nut_and_bolt: 
