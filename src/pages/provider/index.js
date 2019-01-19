@@ -53,19 +53,16 @@ export default class Provider extends Component {
                             />
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group as={Col} md="4" controlId="validationCustomNomeFantasia">
+                        <Form.Group as={Col} md="4" controlId="validationCustomInscricaoMunicipal">
                             <Form.Label>Inscrição Municipal</Form.Label>
                             <InputGroup>
                                 <FormControl aria-label="Text input with checkbox" />
                                 <InputGroup.Append>
-                                    <InputGroup.Text>
-                                        <Form.Check label="Isento" id="checkIsento" />
-                                    </InputGroup.Text>
+                                    <InputGroup.Checkbox />
                                 </InputGroup.Append>
                             </InputGroup>
-                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group as={Col} md="4" controlId="validationCustomNomeFantasia">
+                        <Form.Group as={Col} md="4" controlId="validationCustomInscricaoEstadual">
                             <Form.Label>Inscrição Estadual</Form.Label>
                             <Form.Control
                                 required
@@ -73,7 +70,7 @@ export default class Provider extends Component {
                             />
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group as={Col} md="4" controlId="validationCustomNomeFantasia">
+                        <Form.Group as={Col} md="4">
                             <Form.Label>Ramo de Atividade</Form.Label>
                             <Form.Control
                                 required
@@ -87,9 +84,8 @@ export default class Provider extends Component {
                             </Form.Control>
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group as={Col} md="4" controlId="validationCustomNomeFantasia">
+                        <Form.Group as={Col} md="4">
                             <Form.Label>Site</Form.Label>
-
                             <InputGroup className="mb-3">
                                 <InputGroup.Prepend>
                                     <InputGroup.Text id="basic-addon3">
@@ -99,8 +95,27 @@ export default class Provider extends Component {
                                 <FormControl id="basic-url" aria-describedby="basic-addon3" />
                             </InputGroup>
                         </Form.Group>
+                        <Form.Group as={Col} md="4">
+                            <Form.Label>Instagram</Form.Label>
+                            <InputGroup className="mb-3">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text id="basic-addon3">
+                                        @
+                                    </InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl id="basic-url" aria-describedby="basic-addon3" />
+                            </InputGroup>
+                        </Form.Group>
+                        <Form.Group as={Col} md="4">
+                            <Form.Label>E-mail</Form.Label>
+                            <Form.Control
+                                required
+                                type="text"
+                            />
+                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                        </Form.Group>
                     </Form.Row>
-                    <Button block type="submit" size="lg">Submit form</Button>
+                    <Button block type="submit" size="lg">Enviar</Button>
                 </Form>
             </Container>
         )
