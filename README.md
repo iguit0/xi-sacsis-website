@@ -15,7 +15,7 @@ Dentro do diretório do projeto, você deve rodar:
 
 ### 1. `npm install`
 
-Instala todas as dependências necessárias do projeto. :wrench:
+Instala todas as dependências necessárias do projeto.
 
 ### 2. `npm start`
 
