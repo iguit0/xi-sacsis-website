@@ -1,6 +1,6 @@
-# CLTP - Clube de Tiro Lagoa da Prata :dart::gun:
+# CLTP :dart::gun:
 
-_[API do Projeto :wrench:](https://github.com/mlopesc/quicklife-api)_
+<h2 align="center">Clube de Tiro Lagoa da Prata</h2>
 
 1. Projeto desenvolvido com as versões :nut_and_bolt: 
    1. [node](https://nodejs.org/en/): v10.15.1
