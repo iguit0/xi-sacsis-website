@@ -5,7 +5,16 @@
    - [nuxt.js](https://vuejs.org/v2/guide/): v2.4.0
 
 ## Estrutura de Pastas :open_file_folder:
-Soon...
+
+├── assets              
+├── components                
+├── layouts               
+├── middleware              
+├── pages              
+├── plugins             
+├── static              
+├── store              
+├── nuxt.config.js     # Arquivo de configuração do nuxt
 
 ## Comandos :computer:
 
