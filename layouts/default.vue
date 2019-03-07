@@ -1,8 +1,17 @@
 <template>
   <div>
+    <Header title="CTLP"/>
     <nuxt/>
   </div>
 </template>
+
+<script>
+import Header from "~/components/template/Header";
+export default {
+  components: { Header }
+};
+</script>
+
 
 <style>
 html {
