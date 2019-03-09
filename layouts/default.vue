@@ -2,13 +2,16 @@
   <div>
     <Header title="CTLP"/>
     <nuxt/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from "~/components/template/Header";
+import Footer from "~/components/template/Footer";
+
 export default {
-  components: { Header }
+  components: { Header, Footer }
 };
 </script>
 
