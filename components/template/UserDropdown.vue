@@ -8,12 +8,12 @@
       <v-icon name="angle-down"/>
     </div>
     <div class="user-dropdown-content">
-      <router-link to="/admin">
-        <v-icon name="cogs" class="mr-1"/>Administração
-      </router-link>
-      <router-link to="/entrar">
+      <nuxt-link to="/admin">
+        <v-icon name="cogs" class="mr-1"/>Perfil
+      </nuxt-link>
+      <nuxt-link to="/entrar">
         <v-icon name="sign-out-alt" class="mr-1"/>Sair
-      </router-link>
+      </nuxt-link>
     </div>
   </div>
 </template>
