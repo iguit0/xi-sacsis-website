@@ -1,11 +1,11 @@
 <template>
-  <div class="admin-page">
-    <h1>Admin index</h1>
+  <div class="news-page">
+    <h1>Todas as notícias</h1>
   </div>
 </template>
 
 <style scoped>
-.admin-page {
+.news-page {
   text-align: center;
   padding: 20px;
 }

@@ -3,11 +3,15 @@
     <div>
       <h1 class="title">CTLP</h1>
       <h2 class="subtitle">Clube de Tiro Lagoa da Prata</h2>
+      <hr>
+      <b-btn to="/admin" variant="warning" class="mr-1">Admin</b-btn>
+      <b-btn to="/sobre-nos" variant="primary" class="mr-1">Sobre nós</b-btn>
+      <b-btn to="/noticias" variant="success" class="mr-1">Notícias</b-btn>
     </div>
   </section>
 </template>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;

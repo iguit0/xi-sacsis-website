@@ -1,6 +1,6 @@
 <template>
   <div class="about-page">
-    <h1>About Page</h1>
+    <h1>Sobre nós</h1>
     <p>Lorem Ipsum</p>
   </div>
 </template>
