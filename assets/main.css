@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro');
+
+html {
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: opacity .5s;
