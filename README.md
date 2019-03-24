@@ -1,29 +1,27 @@
-<h1 align="center">XI SACSIS WEBSITE :globe::computer:</h1>
+<h1 align="center">XI SACSIS − Website :globe_with_meridians::computer:</h1>
 
-## Project setup
-```
-npm install
-```
+- **Projeto desenvolvido com as versões** :package:
+   - [node](https://nodejs.org/en/): v10.15.3
+   - [vue.js](https://vuejs.org/): v2.6.6
+   - [vuetify](https://vuetifyjs.com/): v1.5.5
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Executar Projeto :computer::wrench:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+``` bash
+# clonando repositório
+$ git clone https://github.com/iguit0/xi-sacsis-website.git xi-sacsis-website
+$ cd xi-sacsis-website
 
-### Run your tests
-```
-npm run test
-```
+# instala dependências
+$ npm install
 
-### Lints and fixes files
-```
-npm run lint
+# modo desenvolvimento - hot reload
+$ npm run serve
+
+# builda para produção
+$ npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Documentação :clipboard:
+
+Para mais informações, acesse: [Vue.js docs](https://vuejs.org/v2/guide/)
