@@ -1,58 +1,29 @@
-<h1 align="center">CTLP :dart::gun:</h1>
+# xi-sacsis-website
 
-- Projeto desenvolvido com as versões :nut_and_bolt: 
-   - [node](https://nodejs.org/en/): v10.15.2
-   - [nuxt.js](https://vuejs.org/v2/guide/): v2.4.0
-
-## Estrutura de Pastas :open_file_folder:
-
-├── assets              
-├── components                
-├── layouts               
-├── middleware              
-├── pages              
-├── plugins             
-├── static              
-├── store              
-├── nuxt.config.js     # Arquivo de configuração do nuxt
-
-## Comandos :computer:
-
-Dentro do diretório do projeto, você tem os seguintes *scripts*:
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
+## Project setup
+```
+npm install
 ```
 
-### 1. `yarn install`
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Instala todas as dependências necessárias do projeto.
+### Compiles and minifies for production
+```
+npm run build
+```
 
-### 2. `yarn dev`
+### Run your tests
+```
+npm run test
+```
 
-Inicia o app em modo de desenvolvimento :computer: <br/>
-Abra `http://localhost:3000` para visualizar no seu navegador.
+### Lints and fixes files
+```
+npm run lint
+```
 
-*OBS: A página recarrega se você faz edições* :blush:
-
-### 3. `yarn run build`
-
-*"Builda"* o app para produção. :satellite:<br/>
-Seu app está pronto para *deploy*! :cloud:<br/>
-
-## Referências :book:
-
-Este projeto foi construído utilizando a ferramenta [yarn create nuxt-app](https://github.com/nuxt/create-nuxt-app).
-
-Para saber mais sobre Vuejs, sua documentação se encontra disponível na [documentação oficial do Nuxt.js](https://nuxtjs.org)
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
