@@ -1,16 +1,20 @@
 <template>
   <div class="features py-4">
-    <h2 class="display-2 text-uppercase indigo--text">O que te espera na X SACSIS</h2>
+    <span>
+      <v-icon color="indigo" size="40px">far fa-thumbs-up</v-icon>
+    </span>
+    <h2 class="display-3 text-uppercase">O que te espera na XI SACSIS</h2>
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex v-for="(card, index) in cards" :key="index" xs12 md6 lg3 sm6>
           <v-card flat color="transparent">
             <v-responsive class="pt-4">
-              <i :class="'icon fa fa-'+`${card.icon}`"/>
+              <i :class="'icon fa fa-'+`${card.icon}`" :style="'color: '+`${card.color}`"/>
             </v-responsive>
             <v-card-text>
               <h2 class="display-1">{{card.title}}</h2>
-              <p class="black--text mt-1">{{card.subtitle}}</p>
+              <div class="divider div-transparent div-arrow-down"></div>
+              <p class="subtitle black--text mt-1">{{card.subtitle}}</p>
             </v-card-text>
           </v-card>
         </v-flex>
@@ -26,24 +30,28 @@ export default {
       cards: [
         {
           title: "Diversão & Integração",
+          color: "#333",
           icon: "handshake",
           subtitle:
             "O evento oferece atividades descontraídas para interação entre os participantes (coffee breaks, campeonatos, etc)."
         },
         {
           title: "Somando Experiências",
+          color: "#B8860B",
           icon: "chart-line",
           subtitle:
             "O evento foi formulado buscando dinamizar a aquisição de conhecimento e experiências para além do cotidiano da vida acadêmica."
         },
         {
           title: "Minicursos",
+          color: "indigo",
           icon: "chalkboard-teacher",
           subtitle:
             "A SACSIS conta com minicursos para aprimoramento com temas atuais, alinhados à formação técnico-científica dos participantes."
         },
         {
           title: "Palestras Inspiradoras",
+          color: "#4169E1",
           icon: "microphone",
           subtitle:
             "Convidamos referências nacionais nas diversas áreas do conhecimento, com foco em tecnologia da informação."
@@ -54,9 +62,51 @@ export default {
 };
 </script>
 
+
 <style scoped>
 .icon {
   font-size: 50px;
-  color: #136a8a;
+}
+
+.subtitle {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.divider {
+  position: relative;
+  margin-top: 6px;
+  height: 9px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(48, 49, 51),
+    transparent
+  );
+}
+
+.div-arrow-down:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-bottom: 1px solid rgb(48, 49, 51);
+  border-right: 1px solid rgb(48, 49, 51);
 }
 </style>

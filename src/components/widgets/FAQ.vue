@@ -6,7 +6,7 @@
       </span>
       <h2 class="display-3 text-uppercase">Perguntas Frequentes</h2>
       <h2 class="subtitle">Adiantamos {{questions.length}} perguntas mais frequentes!</h2>
-      <v-expansion-panel class="mt-3">
+      <v-expansion-panel class="mt-3 mb-4">
         <v-expansion-panel-content v-for="(item,i) in questions" :key="i">
           <template v-slot:header>
             <h3 class="title">{{item.question}}</h3>

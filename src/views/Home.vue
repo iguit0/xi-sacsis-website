@@ -3,6 +3,7 @@
     <Parallax/>
     <Features/>
     <FAQ/>
+    <Schedule/>
   </v-responsive>
 </template>
 
@@ -10,12 +11,14 @@
 import Parallax from "@/components/widgets/Parallax.vue";
 import Features from "@/components/widgets/Features.vue";
 import FAQ from "@/components/widgets/FAQ";
+import Schedule from "@/components/widgets/Schedule";
 
 export default {
   components: {
     Parallax,
     Features,
-    FAQ
+    FAQ,
+    Schedule
   }
 };
 </script>
