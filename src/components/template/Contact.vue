@@ -22,7 +22,7 @@
         </v-btn>
       </v-form>
     </v-flex>
-    <v-flex ml-3 pl-3>
+    <v-flex ml-5 pl-0 class="map">
       <l-map
         :zoom="zoom"
         :center="center"
@@ -78,3 +78,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.map {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+</style>
