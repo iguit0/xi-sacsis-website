@@ -7,9 +7,7 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text
-        class="white--text pt-0"
-      >Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</v-card-text>
+      <v-card-text class="white--text pt-0">{{text}}</v-card-text>
 
       <v-divider></v-divider>
 
@@ -34,7 +32,9 @@
 <script>
 export default {
   data: () => ({
-    icons: ["fab fa-facebook", "fab fa-instagram"]
+    icons: ["fab fa-facebook", "fab fa-instagram"],
+    text:
+      "A SACSIS é um evento realizado anualmente na Universidade Federal de Viçosa campus Rio Paranaíba, com o objetivo de amplificar e atualizar a visão de nossos estudantes em relação ao mercado de trabalho e instigar o instinto empreendedor. O evento é organizado pela InfoAlto, Empresa Júnior do curso de Sistemas de Informação, pelo CASI, Centro Acadêmico do curso de Sistemas de Informação, em conjunto com o corpo docente do curso."
   })
 };
 </script>
