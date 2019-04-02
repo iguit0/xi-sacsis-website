@@ -35,22 +35,23 @@
         </v-tab>
 
         <v-tab-item v-for="i in 5" :key="i" :value="'tab-' + i">
+          <Timeline/>
+        </v-tab-item>
+        <!--
+        <v-tab-item v-for="i in 5" :key="i" :value="'tab-' + i">
           <v-card flat>
             <v-card-text>{{ text +' '+ i}}</v-card-text>
           </v-card>
-        </v-tab-item>
+        </v-tab-item>-->
       </v-tabs>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
+import Timeline from "@/components/widgets/Timeline";
+
 export default {
-  data() {
-    return {
-      schedule: [],
-      text: "Dia"
-    };
-  }
+  components: { Timeline }
 };
 </script>

@@ -24,6 +24,15 @@
         >
           <strong>@iguit0</strong>
         </a>
+        <span class="ml-1 mr-1">&</span>
+        <a
+          href="https://github.com/LuisMSoares/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #FFA000;"
+        >
+          <strong>@LuisMSoares</strong>
+        </a>
       </v-card-text>
     </v-card>
   </v-footer>
