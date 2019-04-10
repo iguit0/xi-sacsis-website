@@ -26,30 +26,30 @@ export default {
     return {
       questions: [
         {
-          question: "O que preciso fazer para participar?",
+          question: "1. O que preciso fazer para participar?",
           answer:
-            "Para participar do evento é necessário fazer sua inscrição, ela pode ser feita através do site e finalizada no prédio PVA, no Campus da UFV, Rio Paranaíba"
+            "Para participar do evento é necessário fazer sua inscrição, ela pode ser feita através do site e finalizada no prédio PVA, no Campus da UFV, Rio Paranaíba."
         },
         {
-          question: "Vou ser dispensado das minhas aulas?",
+          question: "2. Vou ser dispensado das minhas aulas?",
           answer:
-            "Por se tratar da Semana Acadêmica da graduação em Sistemas de Informação, os docentes deste curso irão abonar a (s) falta (s) dos alunos inscritos na X SACSIS, mediante comprovação de participação e apresentação do certificado fornecido pela organização"
+            "Por se tratar da Semana Acadêmica da graduação em Sistemas de Informação, os docentes deste curso irão abonar a (s) falta (s) dos alunos inscritos na XI SACSIS, mediante comprovação de participação e apresentação do certificado fornecido pela organização."
         },
         {
-          question: "Ganharei horas?",
+          question: "3. Ganharei horas?",
           answer:
-            "Sim! No final do evento, será emitido um certificado de participação que poderá ser utilizado para receber horas extracurriculares."
+            "Sim! No final do evento, será emitido um certificado de participação no qual poderá ser utilizado para receber horas extracurriculares."
         },
         {
           question:
-            "Se eu me inscrever e não ir às palestras, ganho certificado?",
+            "4. Se eu me inscrever e não ir às palestras, ganho certificado?",
           answer:
-            "Não, o certificado é emitido mediante comprovação de presença nos eventos/palestras da X SACSIS."
+            "Não, o certificado é emitido mediante comprovação de presença nos eventos/palestras."
         },
         {
-          question: "Pessoas de outros cursos podem participar?",
+          question: "5. Pessoas de outros cursos podem participar?",
           answer:
-            "O evento é aberto a toda comundiade acadêmica, desta forma alunos de outros cursos poderão se inscrever na X SACSIS. Para alunos de outros cursos e participantes externos, as inscrições poderão ocorrer de maneira integral ou para palestras específicas, de acordo com as áreas de interesse relacionadas a sua formação. Acesso o menu Inscrições -> Outro"
+            "O evento é aberto a toda comunidade acadêmica, desta forma alunos de outros cursos poderão se inscrever na XI SACSIS. Para alunos de outros cursos e participantes externos, as inscrições poderão ocorrer de maneira integral ou para palestras específicas, de acordo com as áreas de interesse relacionadas a sua formação. Acesso o menu Inscrições -> Outro"
         }
       ]
     };

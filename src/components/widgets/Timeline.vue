@@ -1,20 +1,26 @@
 <template>
   <v-timeline>
     <v-timeline-item
-      v-for="(year, i) in years"
+      v-for="(event, i) in schedule"
       :key="i"
-      :color="year.color"
-      :icon="year.icon"
+      :color="event.color"
+      :icon="event.icon"
       fill-dot
     >
       <template v-slot:opposite>
-        <span :class="`headline font-weight-bold ${year.color}--text`" v-text="year.year"></span>
+        <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.start_time"></span>
+        <span
+          v-if="event.end_time"
+          :class="`headline mr-1 ml-1 font-weight-bold ${event.color}--text`"
+          v-text="separator"
+        ></span>
+        <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.end_time"></span>
       </template>
       <div class="py-3">
         <h2
-          :class="`headline text-uppercase font-weight-bold mb-3 ${year.color}--text`"
-        >{{year.type}}</h2>
-        <div>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</div>
+          :class="`headline text-uppercase font-weight-bold mb-3 ${event.color}--text`"
+        >{{event.type}}</h2>
+        <div>{{event.description}}</div>
       </div>
     </v-timeline-item>
   </v-timeline>
@@ -23,44 +29,52 @@
 <script>
 export default {
   data: () => ({
-    schedule: [],
-    years: [
+    separator: "·",
+    schedule: [
       {
         color: "cyan",
-        type: "minicurso",
-        year: "11:00",
-        icon: "fa fa-chalkboard-teacher"
+        type: "credenciamento",
+        start_time: "08:00",
+        end_time: "12:00",
+        icon: "fa fa-id-card",
+        description:
+          "Será realizado o credenciamento de todos os participantes."
       },
       {
         color: "pink",
         type: "minicurso",
-        year: "11:00",
-        icon: "fa fa-chalkboard-teacher"
+        start_time: "11:00",
+        icon: "fa fa-chalkboard-teacher",
+        description: "Descrição Minicurso"
       },
       {
         color: "green",
         type: "palestra",
-        year: "14:00",
-        icon: "fa fa-microphone"
+        start_time: "14:00",
+        icon: "fa fa-microphone",
+        description: "Descrição Palestra"
       },
 
       {
         color: "amber",
         type: "campeonato futebol",
-        year: "17:30",
-        icon: "fa fa-futbol"
+        start_time: "17:30",
+        icon: "fa fa-futbol",
+        description: "Descrição Futebol"
       },
       {
         color: "orange",
         type: "campeonato dota 2",
-        year: "18:30",
-        icon: "fa fa-gamepad"
+        start_time: "18:30",
+        icon: "fa fa-gamepad",
+        description: "Descrição Dota 2"
       },
       {
         color: "indigo",
         type: "maratona de programação",
-        year: "20:00",
-        icon: "fa fa-code"
+        start_time: "20:00",
+        icon: "fa fa-code",
+        description: "Descrição Maratona"
       }
     ]
   })
