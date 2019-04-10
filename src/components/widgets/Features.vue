@@ -3,7 +3,10 @@
     <span>
       <v-icon color="indigo" size="40px">far fa-thumbs-up</v-icon>
     </span>
-    <h2 class="display-3 text-uppercase">O que te espera na XI SACSIS</h2>
+    <h2 class="display-3 text-uppercase">
+      O que te espera na
+      <strong>XI SACSIS</strong>
+    </h2>
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex v-for="(card, index) in cards" :key="index" xs12 md6 lg3 sm6>
@@ -12,7 +15,7 @@
               <i :class="'icon fa fa-'+`${card.icon}`" :style="'color: '+`${card.color}`"/>
             </v-responsive>
             <v-card-text>
-              <h2 class="display-1">{{card.title}}</h2>
+              <h2 class="display-1 text-uppercase">{{card.title}}</h2>
               <div class="divider div-transparent div-arrow-down"></div>
               <p class="subtitle black--text mt-1">{{card.subtitle}}</p>
             </v-card-text>
@@ -29,28 +32,28 @@ export default {
     return {
       cards: [
         {
-          title: "Diversão & Integração",
+          title: "Integração",
           color: "#333",
           icon: "handshake",
           subtitle:
-            "O evento oferece atividades descontraídas para interação entre os participantes (coffee breaks, campeonatos, etc)."
+            "Oferece atividades descontraídas para interação entre os participantes (coffee breaks, campeonatos, etc)."
         },
         {
-          title: "Somando Experiências",
+          title: "Experiências",
           color: "#B8860B",
           icon: "chart-line",
           subtitle:
-            "O evento foi formulado buscando dinamizar a aquisição de conhecimento e experiências para além do cotidiano da vida acadêmica."
+            "Foi formulado buscando dinamizar a aquisição de conhecimento e experiências para além do cotidiano da vida acadêmica."
         },
         {
           title: "Minicursos",
           color: "indigo",
           icon: "chalkboard-teacher",
           subtitle:
-            "A SACSIS conta com minicursos para aprimoramento com temas atuais, alinhados à formação técnico-científica dos participantes."
+            "Conta com minicursos para aprimoramento com temas atuais, alinhados à formação técnico-científica dos participantes."
         },
         {
-          title: "Palestras Inspiradoras",
+          title: "Palestras",
           color: "#4169E1",
           icon: "microphone",
           subtitle:

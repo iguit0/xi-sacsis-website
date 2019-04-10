@@ -1,29 +1,41 @@
 <template>
-  <v-timeline>
-    <v-timeline-item
-      v-for="(event, i) in schedule"
-      :key="i"
-      :color="event.color"
-      :icon="event.icon"
-      fill-dot
-    >
-      <template v-slot:opposite>
-        <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.start_time"></span>
-        <span
-          v-if="event.end_time"
-          :class="`headline mr-1 ml-1 font-weight-bold ${event.color}--text`"
-          v-text="separator"
-        ></span>
-        <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.end_time"></span>
-      </template>
-      <div class="py-3">
-        <h2
-          :class="`headline text-uppercase font-weight-bold mb-3 ${event.color}--text`"
-        >{{event.type}}</h2>
-        <div>{{event.description}}</div>
-      </div>
-    </v-timeline-item>
-  </v-timeline>
+  <v-container grid-list-sm text-xs-center>
+    <v-layout row wrap>
+      <v-flex xs12>
+        <v-timeline>
+          <v-timeline-item
+            v-for="(event, i) in schedule"
+            :key="i"
+            :color="event.color"
+            :icon="event.icon"
+            fill-dot
+          >
+            <template v-slot:opposite>
+              <span
+                :class="`headline font-weight-bold ${event.color}--text`"
+                v-text="event.start_time"
+              ></span>
+              <span
+                v-if="event.end_time"
+                :class="`headline mr-1 ml-1 font-weight-bold ${event.color}--text`"
+                v-text="separator"
+              ></span>
+              <span
+                :class="`headline font-weight-bold ${event.color}--text`"
+                v-text="event.end_time"
+              ></span>
+            </template>
+            <div class="py-3">
+              <h2
+                :class="`headline text-uppercase font-weight-bold mb-3 ${event.color}--text`"
+              >{{event.type}}</h2>
+              <p class="subtitle black--text">{{event.description}}</p>
+            </div>
+          </v-timeline-item>
+        </v-timeline>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -58,14 +70,16 @@ export default {
       {
         color: "amber",
         type: "campeonato futebol",
-        start_time: "17:30",
+        start_time: "15:30",
+        end_time: "18:00",
         icon: "fa fa-futbol",
         description: "Descrição Futebol"
       },
       {
         color: "orange",
         type: "campeonato dota 2",
-        start_time: "18:30",
+        start_time: "18:00",
+        end_time: "19:40",
         icon: "fa fa-gamepad",
         description: "Descrição Dota 2"
       },
@@ -73,6 +87,7 @@ export default {
         color: "indigo",
         type: "maratona de programação",
         start_time: "20:00",
+        end_time: "21:30",
         icon: "fa fa-code",
         description: "Descrição Maratona"
       }
@@ -80,3 +95,11 @@ export default {
   })
 };
 </script>
+
+<style>
+.subtitle {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+</style>

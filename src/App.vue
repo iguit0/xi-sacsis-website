@@ -6,7 +6,6 @@
         <router-view/>
       </v-container>
     </v-content>
-    <Contact/>
     <Footer/>
   </v-app>
 </template>
@@ -14,10 +13,9 @@
 <script>
 import Header from "@/components/template/Header";
 import Footer from "@/components/template/Footer";
-import Contact from "@/components/template/Contact";
 
 export default {
-  components: { Header, Footer, Contact }
+  components: { Header, Footer }
 };
 </script>
 

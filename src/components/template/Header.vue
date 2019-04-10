@@ -1,6 +1,5 @@
 <template>
   <v-toolbar>
-    <v-toolbar-side-icon/>
     <v-toolbar-title class="headline text-uppercase mr-4">
       XI
       <strong>SACSIS</strong>
@@ -23,7 +22,7 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-      <v-btn flat>programação</v-btn>
+      <v-btn flat href="#programacao">programação</v-btn>
       <v-btn flat>atrações</v-btn>
       <v-btn flat color="deep-orange">inscrição</v-btn>
     </v-toolbar-items>
