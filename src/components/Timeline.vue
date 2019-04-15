@@ -26,9 +26,9 @@
               ></span>
             </template>
             <div class="py-3">
-              <h2
+              <div
                 :class="`headline text-uppercase font-weight-bold mb-3 ${event.color}--text`"
-              >{{event.type}}</h2>
+              >{{event.type}}</div>
               <p class="subtitle black--text">{{event.description}}</p>
             </div>
           </v-timeline-item>

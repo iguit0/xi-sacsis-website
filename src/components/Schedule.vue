@@ -4,7 +4,8 @@
       <span>
         <v-icon color="indigo" size="40px">fa fa-calendar-alt</v-icon>
       </span>
-      <h2 class="display-3 text-uppercase">programação</h2>
+      <div class="display-3 text-uppercase hidden-sm-and-down">programação</div>
+      <div class="display-1 text-uppercase hidden-md-and-up">programação</div>
       <h2 class="pb-3">Organizamos uma linha do tempo com todos os eventos para você</h2>
       <v-tabs centered color="indigo darken-1" dark icons-and-text>
         <v-tabs-slider color="orange"></v-tabs-slider>

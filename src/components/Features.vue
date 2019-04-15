@@ -3,10 +3,14 @@
     <span>
       <v-icon color="indigo" size="40px">far fa-thumbs-up</v-icon>
     </span>
-    <h2 class="display-3 text-uppercase">
+    <h2 class="display-3 text-uppercase hidden-sm-and-down">
       O que te espera na
       <strong>XI SACSIS</strong>
     </h2>
+    <div class="display-1 text-uppercase hidden-md-and-up">
+      O que te espera na
+      <strong>XI SACSIS</strong>
+    </div>
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex v-for="(card, index) in cards" :key="index" xs12 md6 lg3 sm6>

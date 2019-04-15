@@ -4,7 +4,8 @@
       <span>
         <v-icon color="indigo" size="40px">far fa-question-circle</v-icon>
       </span>
-      <h2 class="display-3 text-uppercase">Perguntas Frequentes</h2>
+      <div class="display-3 text-uppercase hidden-sm-and-down">Perguntas Frequentes</div>
+      <div class="display-1 text-uppercase hidden-md-and-up">Perguntas Frequentes</div>
       <div class="subtitle">Adiantamos as {{questions.length}} perguntas mais frequentes para você!</div>
       <v-expansion-panel class="mt-3 mb-4" focusable>
         <v-expansion-panel-content v-for="(item,i) in questions" :key="i">
@@ -12,7 +13,7 @@
             <h6 class="headline">{{item.question}}</h6>
           </template>
           <v-card>
-            <v-card-text class="title indigo--text">{{item.answer}}</v-card-text>
+            <v-card-text class="indigo--text">{{item.answer}}</v-card-text>
           </v-card>
         </v-expansion-panel-content>
       </v-expansion-panel>
