@@ -5,8 +5,8 @@
         <v-icon color="indigo" size="40px">far fa-question-circle</v-icon>
       </span>
       <h2 class="display-3 text-uppercase">Perguntas Frequentes</h2>
-      <h2 class="subtitle">Adiantamos {{questions.length}} perguntas mais frequentes para você!</h2>
-      <v-expansion-panel class="mt-3 mb-4">
+      <div class="subtitle">Adiantamos as {{questions.length}} perguntas mais frequentes para você!</div>
+      <v-expansion-panel class="mt-3 mb-4" focusable>
         <v-expansion-panel-content v-for="(item,i) in questions" :key="i">
           <template v-slot:header>
             <h6 class="headline">{{item.question}}</h6>
@@ -28,12 +28,12 @@ export default {
         {
           question: "1. O que preciso fazer para participar?",
           answer:
-            "Para participar do evento é necessário fazer sua inscrição, ela pode ser feita através do site e finalizada no prédio PVA, no Campus da UFV, Rio Paranaíba."
+            "Para participar do evento é necessário fazer sua inscrição, ela pode ser feita através do site e finalizada no prédio PVA, no Campus da UFV Rio Paranaíba."
         },
         {
           question: "2. Vou ser dispensado das minhas aulas?",
           answer:
-            "Por se tratar da Semana Acadêmica da graduação em Sistemas de Informação, os docentes deste curso irão abonar a (s) falta (s) dos alunos inscritos na XI SACSIS, mediante comprovação de participação e apresentação do certificado fornecido pela organização."
+            "Por se tratar da Semana Acadêmica do curso de Sistemas de Informação, os docentes deste curso irão abonar a(s) falta(s) dos alunos inscritos na XI SACSIS, mediante comprovação de participação e apresentação do certificado fornecido pela organização."
         },
         {
           question: "3. Ganharei horas?",
@@ -56,3 +56,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+</style>

@@ -72,7 +72,8 @@ export default {
 }
 
 .subtitle {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }

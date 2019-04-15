@@ -5,9 +5,9 @@
         <v-icon color="indigo" size="40px">fa fa-calendar-alt</v-icon>
       </span>
       <h2 class="display-3 text-uppercase">programação</h2>
-      <h2 class="pb-3">Organizamos uma linha do tempo com todos os eventos</h2>
-      <v-tabs centered color="secondary" dark icons-and-text>
-        <v-tabs-slider color="yellow"></v-tabs-slider>
+      <h2 class="pb-3">Organizamos uma linha do tempo com todos os eventos para você</h2>
+      <v-tabs centered color="indigo darken-1" dark icons-and-text>
+        <v-tabs-slider color="orange"></v-tabs-slider>
 
         <v-tab href="#dia-1">
           Dia 1
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import Timeline from "@/components/widgets/Timeline";
+import Timeline from "./Timeline";
 
 export default {
   components: { Timeline }

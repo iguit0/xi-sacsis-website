@@ -1,21 +1,22 @@
 <template>
-  <v-responsive>
-    <Parallax/>
+  <span>
+    <HomeHero/>
     <Features/>
     <FAQ/>
     <Schedule/>
-  </v-responsive>
+  </span>
 </template>
 
 <script>
-import Parallax from "@/components/widgets/Parallax.vue";
-import Features from "@/components/widgets/Features.vue";
-import FAQ from "@/components/widgets/FAQ";
-import Schedule from "@/components/widgets/Schedule";
+import HomeHero from "@/components/HomeHero.vue";
+import Features from "@/components/Features.vue";
+import FAQ from "@/components/FAQ";
+import Schedule from "@/components/Schedule";
 
 export default {
+  name: "Home",
   components: {
-    Parallax,
+    HomeHero,
     Features,
     FAQ,
     Schedule
