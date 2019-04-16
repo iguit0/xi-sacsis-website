@@ -1,41 +1,36 @@
 <template>
-  <v-container grid-list-sm text-xs-center>
+  <!--<v-container grid-list-sm text-xs-center>
     <v-layout row wrap>
-      <v-flex xs12>
-        <v-timeline>
-          <v-timeline-item
-            v-for="(event, i) in schedule"
-            :key="i"
-            :color="event.color"
-            :icon="event.icon"
-            fill-dot
-          >
-            <template v-slot:opposite>
-              <span
-                :class="`headline font-weight-bold ${event.color}--text`"
-                v-text="event.start_time"
-              ></span>
-              <span
-                v-if="event.end_time"
-                :class="`headline mr-1 ml-1 font-weight-bold ${event.color}--text`"
-                v-text="separator"
-              ></span>
-              <span
-                :class="`headline font-weight-bold ${event.color}--text`"
-                v-text="event.end_time"
-              ></span>
-            </template>
-            <div class="py-3">
-              <div
-                :class="`headline text-uppercase font-weight-bold mb-3 ${event.color}--text`"
-              >{{event.type}}</div>
-              <p class="subtitle black--text">{{event.description}}</p>
-            </div>
-          </v-timeline-item>
-        </v-timeline>
-      </v-flex>
+  <v-flex xs12>-->
+  <v-timeline>
+    <v-timeline-item
+      v-for="(event, i) in schedule"
+      :key="i"
+      :color="event.color"
+      :icon="event.icon"
+      large
+      fill-dot
+    >
+      <template v-slot:opposite>
+        <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.start_time"></span>
+        <span
+          v-if="event.end_time"
+          :class="`headline mr-1 ml-1 font-weight-bold ${event.color}--text`"
+          v-text="separator"
+        ></span>
+        <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.end_time"></span>
+      </template>
+      <div class="py-3">
+        <div
+          :class="`headline text-uppercase font-weight-bold mb-3 ${event.color}--text`"
+        >{{event.type}}</div>
+        <p class="subtitle black--text">{{event.description}}</p>
+      </div>
+    </v-timeline-item>
+  </v-timeline>
+  <!--</v-flex>
     </v-layout>
-  </v-container>
+  </v-container>-->
 </template>
 
 <script>

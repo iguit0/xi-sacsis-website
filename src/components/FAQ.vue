@@ -13,7 +13,7 @@
             <h6 class="headline">{{item.question}}</h6>
           </template>
           <v-card>
-            <v-card-text class="indigo--text">{{item.answer}}</v-card-text>
+            <v-card-text class="indigo--text" style="font-size: 1.3rem;">{{item.answer}}</v-card-text>
           </v-card>
         </v-expansion-panel-content>
       </v-expansion-panel>

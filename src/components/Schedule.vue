@@ -7,7 +7,7 @@
       <div class="display-3 text-uppercase hidden-sm-and-down">programação</div>
       <div class="display-1 text-uppercase hidden-md-and-up">programação</div>
       <h2 class="pb-3">Organizamos uma linha do tempo com todos os eventos para você</h2>
-      <v-tabs centered color="indigo darken-1" dark icons-and-text>
+      <v-tabs centered fixed color="indigo darken-1" dark icons-and-text>
         <v-tabs-slider color="orange"></v-tabs-slider>
 
         <v-tab href="#dia-1">
@@ -35,7 +35,7 @@
           <v-icon>looks_5</v-icon>
         </v-tab>
 
-        <v-tab-item v-for="i in 5" :key="i" :value="'dia-' + i">
+        <v-tab-item lazy v-for="i in 5" :key="i" :value="'dia-' + i">
           <Timeline/>
         </v-tab-item>
       </v-tabs>
