@@ -17,11 +17,11 @@
         </v-flex>
 
         <v-flex xs6 sm4>
-          <v-img :src="require('@/assets/img/casi.png')"/>
+          <v-img :src="require('@/assets/img/ufv-logo.png')"/>
         </v-flex>
 
         <v-flex xs6 sm4>
-          <v-img :src="require('@/assets/img/casi.png')"/>
+          <v-img :src="require('@/assets/img/logo-infoalto.png')"/>
         </v-flex>
       </v-layout>
     </v-container>
