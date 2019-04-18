@@ -4,7 +4,10 @@
     <v-navigation-drawer app v-model="drawer" class="indigo lighten-2" dark disable-resize-watcher>
       <v-list>
         <template v-for="(item, index) in items">
-          <v-list-tile :key="index">
+          <v-list-tile :key="index" :to="item.link">
+            <v-list-tile-content>
+              <v-icon>{{item.icon}}</v-icon>
+            </v-list-tile-content>
             <v-list-tile-content class="text-uppercase">{{item.title}}</v-list-tile-content>
           </v-list-tile>
           <v-divider :key="`divider-${index}`"></v-divider>
@@ -16,28 +19,14 @@
     <v-toolbar color="indigo" dark>
       <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-spacer class="hidden-md-and-up"></v-spacer>
-      <v-toolbar-title class="headline text-uppercase mr-4">
+      <v-toolbar-title class="headline text-uppercase">
         XI
         <strong>SACSIS</strong>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-menu offset-y>
-          <v-btn flat slot="activator">
-            Evento
-            <v-icon class="ml-1">keyboard_arrow_down</v-icon>
-          </v-btn>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-title>
-                <v-list-tile-title>Teste 1</v-list-tile-title>
-              </v-list-tile-title>
-            </v-list-tile>
-            <v-list-tile>
-              <v-list-tile-title>Teste 2</v-list-tile-title>
-            </v-list-tile>
-          </v-list>
-        </v-menu>
+        <v-btn flat to="/">início</v-btn>
+        <v-btn flat to="/evento">evento</v-btn>
         <v-btn flat>programação</v-btn>
         <v-btn flat>atrações</v-btn>
         <v-btn flat color="yellow">inscrição</v-btn>
@@ -53,10 +42,11 @@ export default {
   data: () => ({
     drawer: false,
     items: [
-      { title: "evento" },
-      { title: "programação" },
-      { title: "atrações" },
-      { title: "inscrição" }
+      { icon: "fa fa-home", title: "início", link: "/" },
+      { icon: "fa fa-building", title: "evento", link: "/evento" },
+      { icon: "fa fa-calendar-alt", title: "programação" },
+      { icon: "fa fa-microphone", title: "atrações" },
+      { icon: "fa fa-user-plus", title: "inscrição" }
     ]
   })
 };

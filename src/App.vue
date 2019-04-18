@@ -5,6 +5,11 @@
       <v-content transition="slide-x transition">
         <router-view/>
       </v-content>
+      <back-to-top bottom="50px" right="50px">
+        <v-btn fab color="indigo" dark class="btn-to-top">
+          <v-icon>expand_less</v-icon>
+        </v-btn>
+      </back-to-top>
       <Footer/>
     </v-app>
   </div>
