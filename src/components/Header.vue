@@ -27,6 +27,7 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat to="/">início</v-btn>
         <v-btn flat to="/evento">evento</v-btn>
+        <v-btn flat to="/como-chegar">como chegar</v-btn>
         <v-btn flat>programação</v-btn>
         <v-btn flat>atrações</v-btn>
         <v-btn flat color="yellow">inscrição</v-btn>
@@ -44,6 +45,11 @@ export default {
     items: [
       { icon: "fa fa-home", title: "início", link: "/" },
       { icon: "fa fa-building", title: "evento", link: "/evento" },
+      {
+        icon: "fa fa-map-marker-alt",
+        title: "como chegar",
+        link: "/como-chegar"
+      },
       { icon: "fa fa-calendar-alt", title: "programação" },
       { icon: "fa fa-microphone", title: "atrações" },
       { icon: "fa fa-user-plus", title: "inscrição" }

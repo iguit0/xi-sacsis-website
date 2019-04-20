@@ -19,6 +19,11 @@ export default new Router({
       path: '/evento',
       name: 'event',
       component: () => import('./views/Event.vue')
+    },
+    {
+      path: '/como-chegar',
+      name: 'map',
+      component: () => import('./views/Map.vue')
     }
   ]
 })
