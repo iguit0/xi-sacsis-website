@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
 .home-hero {
-  background: url("../assets/img/parallax.jpeg") center;
+  background: url(https://place-hold.it/1664x936) center;
   background-size: cover;
   width: 100%;
   height: 100%;

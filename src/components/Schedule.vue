@@ -1,5 +1,5 @@
 <template>
-  <v-layout id="programacao">
+  <v-layout>
     <v-flex>
       <span>
         <v-icon color="indigo" size="40px">fa fa-calendar-alt</v-icon>
