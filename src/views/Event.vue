@@ -6,6 +6,11 @@
     <h2 class="display-3 text-uppercase hidden-sm-and-down">Sobre o evento</h2>
     <p class="intro-desc pt-3">{{about}}</p>
     <span>
+      <v-icon color="indigo" size="40px">fa fa-calendar-check</v-icon>
+    </span>
+    <h2 class="display-3 text-uppercase hidden-sm-and-down">o que vai ter?</h2>
+    <p class="intro-desc pt-3">{{content}}</p>
+    <span>
       <v-icon color="indigo" size="40px">fa fa-people-carry</v-icon>
     </span>
     <h2 class="display-3 text-uppercase hidden-sm-and-down">organização</h2>
@@ -27,11 +32,6 @@
         </v-layout>
       </v-container>
     </span>
-    <span>
-      <v-icon color="indigo" size="40px">fa fa-calendar-check</v-icon>
-    </span>
-    <h2 class="display-3 text-uppercase hidden-sm-and-down">o que vai ter?</h2>
-    <p class="intro-desc pt-3">{{content}}</p>
   </div>
 </template>
 
