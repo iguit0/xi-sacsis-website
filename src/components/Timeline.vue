@@ -2,7 +2,7 @@
   <!--<v-container grid-list-sm text-xs-center>
     <v-layout row wrap>
   <v-flex xs12>-->
-  <v-timeline>
+  <v-timeline v-if="schedule && schedule.length">
     <v-timeline-item
       v-for="(event, i) in schedule"
       :key="i"
@@ -33,6 +33,7 @@
       </div>
     </v-timeline-item>
   </v-timeline>
+  <h2 class="mt-2 text-center text-uppercase" v-else>programação não definida ainda.. aguarde!</h2>
   <!--</v-flex>
     </v-layout>
   </v-container>-->
