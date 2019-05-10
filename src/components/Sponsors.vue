@@ -4,7 +4,8 @@
       <span>
         <v-icon color="indigo" size="40px">fa fa-hand-holding-usd</v-icon>
       </span>
-      <h2 class="display-3 text-uppercase">Patrocinadores</h2>
+      <div class="display-3 text-uppercase hidden-sm-and-down">patrocinadores</div>
+      <div class="display-1 text-uppercase hidden-md-and-up">patrocinadores</div>
       <!--<div class="card-carousel-wrapper" v-if="sponsors && sponsors.length >= 1">
         <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
         <div class="card-carousel">
