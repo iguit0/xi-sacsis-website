@@ -1,7 +1,4 @@
 <template>
-  <!--<v-container grid-list-sm text-xs-center>
-    <v-layout row wrap>
-  <v-flex xs12>-->
   <v-timeline v-if="schedule && schedule.length">
     <v-timeline-item
       v-for="(event, i) in schedule"
@@ -34,9 +31,6 @@
     </v-timeline-item>
   </v-timeline>
   <h2 class="mt-2 text-center text-uppercase" v-else>programação não definida ainda.. aguarde!</h2>
-  <!--</v-flex>
-    </v-layout>
-  </v-container>-->
 </template>
 
 <script>
@@ -57,6 +51,7 @@ export default {
         color: "pink",
         type: "minicurso",
         start_time: "11:00",
+        end_time: "12:00",
         icon: "fa fa-chalkboard-teacher",
         description: "Descrição Minicurso"
       },
@@ -64,6 +59,7 @@ export default {
         color: "green",
         type: "palestra",
         start_time: "14:00",
+        end_time: "12:00",
         icon: "fa fa-microphone",
         description: "Descrição Palestra"
       },

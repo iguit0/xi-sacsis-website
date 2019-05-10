@@ -36,7 +36,8 @@
         </v-tab>
 
         <v-tab-item lazy v-for="i in 5" :key="i" :value="'dia-' + i">
-          <Timeline/>
+          <Timeline v-if="$vuetify.breakpoint.mdAndUp"/>
+          <ListSchedule v-else/>
         </v-tab-item>
       </v-tabs>
     </v-flex>
@@ -45,8 +46,9 @@
 
 <script>
 import Timeline from "./Timeline";
+import ListSchedule from "./ListSchedule";
 
 export default {
-  components: { Timeline }
+  components: { Timeline, ListSchedule }
 };
 </script>
