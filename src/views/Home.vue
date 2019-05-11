@@ -4,7 +4,7 @@
     <Features/>
     <FAQ/>
     <Schedule/>
-    <Sponsors/>
+    <!--<Sponsors/>-->
   </span>
 </template>
 
@@ -13,7 +13,6 @@ import HomeHero from "@/components/HomeHero.vue";
 import Features from "@/components/Features.vue";
 import FAQ from "@/components/FAQ";
 import Schedule from "@/components/Schedule";
-import Sponsors from "@/components/Sponsors";
 
 export default {
   name: "Home",
@@ -21,8 +20,7 @@ export default {
     HomeHero,
     Features,
     FAQ,
-    Schedule,
-    Sponsors
+    Schedule
   }
 };
 </script>

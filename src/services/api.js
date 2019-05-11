@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-	baseURL: 'https://api.sacsis.tech/api',
+	baseURL: 'https://sacsis-api.herokuapp.com/api/',
 	validateStatus: function (status) {
 		return status < 1000;
 	}

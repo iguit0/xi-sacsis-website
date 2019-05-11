@@ -1,5 +1,5 @@
 <template>
-  <v-timeline v-if="schedule && schedule.length">
+  <v-timeline>
     <v-timeline-item
       v-for="(event, i) in schedule"
       :key="i"
@@ -30,7 +30,6 @@
       </div>
     </v-timeline-item>
   </v-timeline>
-  <h2 class="mt-2 text-center text-uppercase" v-else>programação não definida ainda.. aguarde!</h2>
 </template>
 
 <script>

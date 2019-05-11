@@ -6,6 +6,7 @@
       </span>
       <div class="display-3 text-uppercase hidden-sm-and-down">patrocinadores</div>
       <div class="display-1 text-uppercase hidden-md-and-up">patrocinadores</div>
+      <h2 class="headline pt-1 pb-1 text-uppercase font-weight-light indigo--text">Em breve...</h2>
       <!--<div class="card-carousel-wrapper" v-if="sponsors && sponsors.length >= 1">
         <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
         <div class="card-carousel">

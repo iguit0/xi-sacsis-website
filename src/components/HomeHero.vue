@@ -11,9 +11,9 @@
       <div
         class="display-1 font-weight-bold white--text text-xs-center hidden-sm-and-down"
       >Grandes carreiras começam aqui</div>
-      <v-btn fab large color="primary" class="mt-5">
+      <!--<v-btn fab large color="primary" class="mt-5">
         <v-icon large color="white">expand_more</v-icon>
-      </v-btn>
+      </v-btn>-->
     </v-layout>
   </v-container>
 </template>

@@ -28,7 +28,6 @@
         <v-btn flat to="/">início</v-btn>
         <v-btn flat to="/evento">evento</v-btn>
         <v-btn flat to="/como-chegar">como chegar</v-btn>
-        <v-btn flat>programação</v-btn>
         <v-btn flat color="yellow">inscrição</v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -49,7 +48,6 @@ export default {
         title: "como chegar",
         link: "/como-chegar"
       },
-      { icon: "fa fa-calendar-alt", title: "programação" },
       { icon: "fa fa-user-plus", title: "inscrição" }
     ]
   })
