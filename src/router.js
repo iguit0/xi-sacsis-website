@@ -24,6 +24,11 @@ export default new Router({
       path: '/como-chegar',
       name: 'map',
       component: () => import('./views/Map.vue')
+    },
+    {
+      path: '*',
+      name: 'notfound',
+      component: () => import('./views/404.vue')
     }
   ]
 })

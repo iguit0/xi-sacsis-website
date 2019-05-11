@@ -3,7 +3,7 @@
     <v-spacer></v-spacer>
     <div class="text-xs-center">
       Feito com
-      <v-icon color="red" size="18px">fa fa-heart</v-icon>
+      <v-icon color="red" size="16px">fa fa-heart</v-icon>
       <span class="ml-1 mr-1">por</span>
       <a
         href="https://github.com/iguit0"
@@ -22,7 +22,7 @@
       >
         <strong>@LuisMSoares</strong>
       </a>
-      &copy; {{ new Date().getFullYear() }}
+      <span class="ml-1 hidden-sm-and-down">&copy; {{ new Date().getFullYear() }}</span>
     </div>
   </v-footer>
 </template>
