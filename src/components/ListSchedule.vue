@@ -71,6 +71,7 @@
 
 <script>
 export default {
+  props: ["schedule"],
   name: "ListSchedule",
   data: () => ({
     schedule: [
@@ -87,12 +88,12 @@ export default {
       {
         color: "pink",
         type: "minicurso",
-        start_time: "11:00",
-        end_time: "12:00",
+        start_time: "14:00",
+        end_time: "17:00",
         location: "PVA 229",
-        speaker: "Buguinho Developer",
+        speaker: "Seu Zé",
         icon: "fa fa-chalkboard-teacher",
-        description: "Descrição Minicurso"
+        description: "Como fazer gambiarra com excelência"
       },
       {
         color: "#33691E",

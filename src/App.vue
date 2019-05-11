@@ -5,8 +5,8 @@
       <v-content transition="slide-x transition">
         <router-view/>
       </v-content>
-      <back-to-top bottom="50px" right="50px">
-        <v-btn fab color="indigo" dark class="btn-to-top">
+      <back-to-top bottom="40px" right="20px">
+        <v-btn small fab color="indigo" dark class="btn-to-top">
           <v-icon>expand_less</v-icon>
         </v-btn>
       </back-to-top>
