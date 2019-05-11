@@ -10,7 +10,7 @@
     >
       <template v-slot:icon v-if="event.type === 'palestra' || event.type === 'minicurso'">
         <v-avatar>
-          <v-img src="http://i.pravatar.cc/64"/>
+          <v-img src="https://place-hold.it/64"/>
         </v-avatar>
       </template>
       <template v-slot:opposite>

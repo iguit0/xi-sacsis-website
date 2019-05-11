@@ -1,14 +1,14 @@
 <template>
   <span>
     <!-- Drawer -->
-    <v-navigation-drawer app v-model="drawer" class="indigo lighten-2" dark disable-resize-watcher>
+    <v-navigation-drawer app v-model="drawer" class="indigo" dark disable-resize-watcher>
       <v-list>
         <template v-for="(item, index) in items">
           <v-list-tile :key="index" :to="item.link">
             <v-list-tile-content>
               <v-icon>{{item.icon}}</v-icon>
             </v-list-tile-content>
-            <v-list-tile-content class="text-uppercase">{{item.title}}</v-list-tile-content>
+            <v-list-tile-content class="text-uppercase white--text">{{item.title}}</v-list-tile-content>
           </v-list-tile>
           <v-divider :key="`divider-${index}`"></v-divider>
         </template>
@@ -16,7 +16,7 @@
     </v-navigation-drawer>
     <!-- ./Drawer -->
     <!-- Toolbar -->
-    <v-toolbar color="indigo" dark>
+    <v-toolbar color="indigo" dark flat>
       <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <v-toolbar-title class="headline text-uppercase">
@@ -29,7 +29,6 @@
         <v-btn flat to="/evento">evento</v-btn>
         <v-btn flat to="/como-chegar">como chegar</v-btn>
         <v-btn flat>programação</v-btn>
-        <v-btn flat>atrações</v-btn>
         <v-btn flat color="yellow">inscrição</v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -51,7 +50,6 @@ export default {
         link: "/como-chegar"
       },
       { icon: "fa fa-calendar-alt", title: "programação" },
-      { icon: "fa fa-microphone", title: "atrações" },
       { icon: "fa fa-user-plus", title: "inscrição" }
     ]
   })

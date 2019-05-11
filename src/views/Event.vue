@@ -3,17 +3,20 @@
     <span>
       <v-icon color="indigo" size="40px">fa fa-building</v-icon>
     </span>
-    <h2 class="display-3 text-uppercase hidden-sm-and-down">Sobre o evento</h2>
+    <div class="display-3 text-uppercase hidden-sm-and-down">sobre o evento</div>
+    <div class="display-1 text-uppercase hidden-md-and-up">sobre o evento</div>
     <p class="intro-desc pt-3">{{about}}</p>
     <span>
       <v-icon color="indigo" size="40px">fa fa-calendar-check</v-icon>
     </span>
-    <h2 class="display-3 text-uppercase hidden-sm-and-down">o que vai ter?</h2>
+    <div class="display-3 text-uppercase hidden-sm-and-down">o que vai ter?</div>
+    <div class="display-1 text-uppercase hidden-md-and-up">o que vai ter?</div>
     <p class="intro-desc pt-3">{{content}}</p>
     <span>
       <v-icon color="indigo" size="40px">fa fa-people-carry</v-icon>
     </span>
-    <h2 class="display-3 text-uppercase hidden-sm-and-down">organização</h2>
+    <div class="display-3 text-uppercase hidden-sm-and-down">organização</div>
+    <div class="display-1 text-uppercase hidden-md-and-up">organização</div>
     <p class="intro-desc pt-3">{{organization}}</p>
     <span>
       <v-container grid-list-sm fill-height>
