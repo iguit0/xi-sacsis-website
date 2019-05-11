@@ -71,7 +71,7 @@ export default {
   props: ["schedule"],
   name: "ListSchedule",
   data: () => ({
-    schedule: [
+    /*schedule: [
       {
         color: "#333",
         type: "credenciamento",
@@ -130,7 +130,7 @@ export default {
         location: "PVA 227",
         description: "Descrição Maratona"
       }
-    ]
+    ]*/
   })
 };
 </script>

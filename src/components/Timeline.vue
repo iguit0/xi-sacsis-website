@@ -34,9 +34,10 @@
 
 <script>
 export default {
+  props: ["schedule"],
   data: () => ({
-    separator: "·",
-    schedule: [
+    separator: "·"
+    /*schedule: [
       {
         color: "cyan",
         type: "credenciamento",
@@ -87,7 +88,7 @@ export default {
         icon: "fa fa-code",
         description: "Descrição Maratona"
       }
-    ]
+    ]*/
   })
 };
 </script>
