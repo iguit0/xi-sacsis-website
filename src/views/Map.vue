@@ -8,29 +8,28 @@
     @update:bounds="boundsUpdated"
   >
     <l-tile-layer :url="url"/>
-    <l-marker :lat-lng="markerLatLng">
-      <l-tooltip>Os eventos acontecerão (em sua grande maioria) aqui!</l-tooltip>
-    </l-marker>
+    <l-marker :lat-lng="markerLatLng"></l-marker>
+    <l-marker :lat-lng="marker2LatLng"></l-marker>
   </l-map>
 </template>
 
 <script>
-import { LMap, LTileLayer, LTooltip, LMarker } from "vue2-leaflet";
+import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
 
 export default {
   name: "Map",
   components: {
     LMap,
     LMarker,
-    LTooltip,
     LTileLayer
   },
   data() {
     return {
       url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
       zoom: 18,
-      center: [-19.2163933, -46.223302],
+      center: [-19.2171352, -46.2232625],
       markerLatLng: [-19.216289, -46.2235128],
+      marker2LatLng: [-19.217663, -46.223501],
       bounds: null
     };
   },

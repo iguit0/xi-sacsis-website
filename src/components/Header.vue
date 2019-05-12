@@ -53,3 +53,9 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+.v-toolbar__title:not(:first-child) {
+  margin-left: auto;
+}
+</style>
