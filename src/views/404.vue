@@ -32,8 +32,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Kanit:200");
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
