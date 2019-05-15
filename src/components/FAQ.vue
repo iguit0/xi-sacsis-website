@@ -5,8 +5,8 @@
         <v-icon color="indigo" size="40px">far fa-question-circle</v-icon>
       </span>
       <div class="display-3 text-uppercase hidden-sm-and-down">Perguntas Frequentes</div>
-      <div class="display-1 text-uppercase hidden-md-and-up">Perguntas Frequentes</div>
-      <div class="subtitle">Adiantamos as {{questions.length}} perguntas mais frequentes</div>
+      <div class="title mt-1 text-uppercase hidden-md-and-up">Perguntas Frequentes</div>
+      <div class="subtitle mt-2">Adiantamos as {{questions.length}} perguntas mais frequentes</div>
       <v-expansion-panel class="mt-3 mb-4" focusable>
         <v-expansion-panel-content v-for="(item,i) in questions" :key="i">
           <template v-slot:header>
@@ -57,12 +57,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.subtitle {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
-</style>

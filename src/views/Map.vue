@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+      url: "https://{s}.tile.osm.org/{z}/{x}/{y}.png",
       zoom: 18,
       center: [-19.2171352, -46.2232625],
       markerLatLng: [-19.216289, -46.2235128],

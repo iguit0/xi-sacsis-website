@@ -7,7 +7,7 @@
       O que te espera na
       <strong>XI SACSIS</strong>
     </h2>
-    <div class="display-1 text-uppercase hidden-md-and-up">
+    <div class="title mt-1 text-uppercase hidden-md-and-up">
       O que te espera na
       <strong>XI SACSIS</strong>
     </div>

@@ -26,6 +26,11 @@ export default new Router({
       component: () => import('./views/Map.vue')
     },
     {
+      path: '/inscricao',
+      name: 'redirect',
+      component: () => import('./views/Redirect.vue')
+    },
+    {
       path: '*',
       name: 'notfound',
       component: () => import('./views/404.vue')

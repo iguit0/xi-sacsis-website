@@ -4,16 +4,15 @@
       <div
         class="home-hero-title font-weight-black white--text text-xs-center hidden-sm-and-down"
       >XI SACSIS</div>
-      <div class="display-3 font-weight-black white--text text-xs-center hidden-md-and-up">XI SACSIS</div>
+      <div
+        class="home-hero-title-res font-weight-black white--text text-xs-center hidden-md-and-up"
+      >XI SACSIS</div>
       <div
         class="home-hero-subtitle yellow--text text-xs-center text-uppercase mb-3 mt-2"
       >10 a 14 de Junho</div>
       <div
         class="home-hero-subtitle font-weight-bold white--text text-xs-center hidden-sm-and-down"
       >Grandes carreiras começam aqui</div>
-      <!--<v-btn fab large color="primary" class="mt-5">
-        <v-icon large color="white">expand_more</v-icon>
-      </v-btn>-->
     </v-layout>
   </v-container>
 </template>
@@ -34,6 +33,13 @@ export default {
 
 .home-hero-title {
   font-size: 112px !important;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+  font-family: "Kanit", sans-serif !important;
+}
+
+.home-hero-title-res {
+  font-size: 56px !important;
   line-height: 1 !important;
   letter-spacing: -0.04em !important;
   font-family: "Kanit", sans-serif !important;

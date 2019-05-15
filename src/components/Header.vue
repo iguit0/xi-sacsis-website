@@ -33,7 +33,7 @@
       <v-divider></v-divider>
       <v-list>
         <template v-for="(item, index) in items">
-          <v-list-tile :key="index" :to="item.link" @click="redirect">
+          <v-list-tile :key="index" :to="item.link">
             <v-list-tile-content>
               <v-icon>{{item.icon}}</v-icon>
             </v-list-tile-content>
@@ -77,7 +77,7 @@ export default {
         title: "como chegar",
         link: "/como-chegar"
       },
-      { icon: "fa fa-user-plus", title: "inscrição", action: "redirect" }
+      { icon: "fa fa-user-plus", title: "inscrição", link: "/inscricao" }
     ]
   }),
   methods: {

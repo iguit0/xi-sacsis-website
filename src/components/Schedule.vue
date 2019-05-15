@@ -5,9 +5,11 @@
         <v-icon color="indigo" size="40px">fa fa-calendar-alt</v-icon>
       </span>
       <div class="display-3 text-uppercase hidden-sm-and-down">programação</div>
-      <div class="display-1 text-uppercase hidden-md-and-up">programação</div>
+      <div class="title mt-1 text-uppercase hidden-md-and-up">programação</div>
       <div v-if="schedule && schedule.length">
-        <h2 class="mb-2">Organizamos uma linha do tempo com todos os eventos para você</h2>
+        <div
+          class="subtitle mt-1 mb-2"
+        >Organizamos uma linha do tempo com todos os eventos para você</div>
         <v-tabs centered fixed color="indigo darken-1" dark icons-and-text>
           <v-tabs-slider color="orange"></v-tabs-slider>
 
