@@ -3,30 +3,50 @@
         "id": 0,
         "name": "República Macaúba",
         "tag": "República",
+        "icon": "home",
+        "color": "green",
+        "facebook": "https://www.facebook.com/RepublicaMacauba/",
+        "instagram": "https://www.instagram.com/republicamacauba/",
         "img": "https://pbs.twimg.com/profile_images/1183226905/aaaaaaaaaaaaaaa_400x400.jpg"
     },
     {
         "id": 1,
         "name": "Patrocinador 2",
         "tag": "Patrocinador 2",
+        "color": "pink",
+        "icon": "fas fa-shopping-cart",
         "img": "https://placehold.it/200x200"
     },
     {
         "id": 2,
         "name": "Patrocinador 3",
         "tag": "Patrocinador 3",
+        "color": "amber",
+        "icon": "fas fa-language",
         "img": "https://placehold.it/200x200"
     },
     {
         "id": 3,
         "name": "Patrocinador 4",
         "tag": "Patrocinador 4",
+        "color": "orange",
+        "icon": "fas fa-broadcast-tower",
         "img": "https://placehold.it/200x200"
     },
     {
         "id": 4,
         "name": "Patrocinador 5",
         "tag": "Patrocinador 5",
+        "color": "indigo",
+        "icon": "fas fa-bed",
+        "img": "https://placehold.it/200x200"
+    },
+    {
+        "id": 5,
+        "name": "Patrocinador 6",
+        "tag": "Patrocinador 6",
+        "color": "blue",
+        "icon": "fas fa-laptop",
         "img": "https://placehold.it/200x200"
     }
 ]

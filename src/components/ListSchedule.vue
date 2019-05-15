@@ -6,7 +6,7 @@
       v-for="(event, i) in schedule"
       :key="i"
       dark
-      max-width="400"
+      max-width="950"
     >
       <v-card-title>
         <v-icon left>{{ event.icon }}</v-icon>
@@ -46,23 +46,6 @@
         </v-list-tile>
       </v-card-actions>
     </v-card>
-    <!--<v-card>
-      <v-card-title primary-title>
-        <div>
-          <h3
-            :class="`headline text-uppercase font-weight-bold mb-0 ${event.color}--text`"
-          >{{ event.type }}</h3>
-          <div class="mt-1 mb-1">{{ event.description }}</div>
-          <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.start_time"></span>
-          <span
-            v-if="event.end_time"
-            :class="`headline mr-1 ml-1 font-weight-bold ${event.color}--text`"
-            v-text="separator"
-          ></span>
-          <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.end_time"></span>
-        </div>
-      </v-card-title>
-    </v-card>-->
   </div>
 </template>
 

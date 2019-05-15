@@ -1,38 +1,87 @@
 <template>
-  <v-layout pa-5>
-    <v-flex xs12 sm6 offset-sm3 fluid>
-      <span>
-        <v-icon color="indigo" size="40px">fa fa-hand-holding-usd</v-icon>
-      </span>
-      <div class="display-3 text-uppercase hidden-sm-and-down">patrocinadores</div>
-      <div class="display-1 text-uppercase hidden-md-and-up">patrocinadores</div>
-      <h2>Empresas que apoiaram o evento</h2>
-      <div class="card-carousel-wrapper" v-if="sponsors && sponsors.length >= 1">
-        <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
-        <div class="card-carousel">
-          <div class="card-carousel--overflow-container">
-            <div
-              class="card-carousel-cards"
-              :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}"
-            >
-              <div class="card-carousel--card" v-for="(item) in sponsors" :key="item.id">
-                <v-img :src="item.img" width="200" height="200" rounded="right"/>
-                <div class="card-carousel--card--footer">
-                  <p>{{ item.name }}</p>
-                  <p>{{ item.tag }}</p>
-                </div>
+  <div class="mt-3">
+    <span>
+      <v-icon color="indigo" size="40px">fa fa-hand-holding-usd</v-icon>
+    </span>
+    <div class="display-3 text-uppercase hidden-sm-and-down">patrocinadores</div>
+    <div class="display-1 text-uppercase hidden-md-and-up">patrocinadores</div>
+    <h2>Empresas que apoiaram o evento</h2>
+    <div
+      class="mt-4 pb-4 hidden-sm-and-down card-carousel-wrapper"
+      v-if="sponsors && sponsors.length"
+    >
+      <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
+      <div class="card-carousel">
+        <div class="card-carousel--overflow-container">
+          <div
+            class="card-carousel-cards"
+            :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}"
+          >
+            <div class="card-carousel--card" v-for="(item) in sponsors" :key="item.id">
+              <img :src="item.img" width="200px" height="200px">
+              <div class="card-carousel--card--footer">
+                <p>{{ item.name }}</p>
+                <p>{{ item.tag }}</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
       </div>
-      <h2
-        v-else
-        class="headline pt-1 pb-1 text-uppercase font-weight-light indigo--text"
-      >Em breve...</h2>
-    </v-flex>
-  </v-layout>
+      <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
+    </div>
+    <h2 v-else class="headline pt-1 pb-1 text-uppercase font-weight-light indigo--text">Em breve...</h2>
+    <div class="mt-4 mb-3 pb-3 hidden-md-and-up">
+      <v-card
+        :color="item.color"
+        class="mx-auto"
+        v-for="(item) in sponsors"
+        :key="item.id"
+        dark
+        max-width="950"
+      >
+        <v-card-title>
+          <v-icon left>{{ item.icon }}</v-icon>
+          <span class="title text-uppercase font-weight-light">{{ item.name }}</span>
+        </v-card-title>
+
+        <img :src="item.img" width="150px" height="150px" style="border-radius: 10px;">
+
+        <v-card-text class="subtitle font-weight-bold">{{ item.tag }}</v-card-text>
+
+        <v-card-actions>
+          <v-list-tile class="grow">
+            <a
+              :href="item.facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mr-1"
+              style="text-decoration: none; color: #FFA000;"
+            >
+              <v-btn color="#f3f3f3" small fab v-if="item.facebook">
+                <v-icon color="indigo">fab fa-facebook</v-icon>
+              </v-btn>
+            </a>
+            <a
+              :href="item.instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ml-2"
+              style="text-decoration: none; color: #FFA000;"
+            >
+              <v-btn color="#f3f3f3" small fab v-if="item.instagram">
+                <v-icon color="pink">fab fa-instagram</v-icon>
+              </v-btn>
+            </a>
+
+            <v-layout align-center justify-end>
+              <v-icon small>fas fa-map-signs</v-icon>
+              <span class="subheading ml-1">{{ item.tag }}</span>
+            </v-layout>
+          </v-list-tile>
+        </v-card-actions>
+      </v-card>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -43,22 +92,22 @@ export default {
     return {
       sponsors,
       currentOffset: 0,
-      windowSize: 5,
+      windowSize: 4,
       paginationFactor: 220
     };
   },
-  methods: {
+  computed: {
     atEndOfList() {
       return (
-        this.currentOffset <=
-        this.paginationFactor * -1 * (this.sponsors.length - this.windowSize)
+        this.currentOffset <= this.paginationFactor * -1 * (6 - this.windowSize)
       );
     },
     atHeadOfList() {
       return this.currentOffset === 0;
-    },
+    }
+  },
+  methods: {
     moveCarousel(direction) {
-      // Find a more elegant way to express the :style. consider using props to make it truly generic
       if (direction === 1 && !this.atEndOfList) {
         this.currentOffset -= this.paginationFactor;
       } else if (direction === -1 && !this.atHeadOfList) {
@@ -81,8 +130,7 @@ export default {
 .card-carousel {
   display: flex;
   justify-content: center;
-  /*width: 640px;*/
-  width: 1090px;
+  width: 870px;
 }
 .card-carousel--overflow-container {
   overflow: hidden;
@@ -152,19 +200,18 @@ export default {
 .card-carousel-cards .card-carousel--card--footer {
   border-top: 0;
   padding: 7px 15px;
-  font-family: "Source Sans Pro", sans-serif;
 }
 .card-carousel-cards .card-carousel--card--footer p {
   padding: 3px 0;
   margin: 0;
   margin-bottom: 2px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 500;
   color: #2c3e50;
   user-select: none;
 }
 .card-carousel-cards .card-carousel--card--footer p:nth-of-type(2) {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   padding: 6px;
   background: rgba(40, 44, 53, 0.06);
@@ -196,5 +243,13 @@ export default {
   border-radius: 2px;
   background: white;
   box-shadow: -0px -0px 0px #004977;
+}
+
+h1 {
+  font-size: 3.6em;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 0;
+  color: #42b883;
 }
 </style>
