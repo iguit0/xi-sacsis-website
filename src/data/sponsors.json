@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "República Macaúba",
+        "tag": "República",
+        "img": "https://pbs.twimg.com/profile_images/1183226905/aaaaaaaaaaaaaaa_400x400.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Patrocinador 2",
+        "tag": "Patrocinador 2",
+        "img": "https://placehold.it/200x200"
+    },
+    {
+        "id": 2,
+        "name": "Patrocinador 3",
+        "tag": "Patrocinador 3",
+        "img": "https://placehold.it/200x200"
+    },
+    {
+        "id": 3,
+        "name": "Patrocinador 4",
+        "tag": "Patrocinador 4",
+        "img": "https://placehold.it/200x200"
+    },
+    {
+        "id": 4,
+        "name": "Patrocinador 5",
+        "tag": "Patrocinador 5",
+        "img": "https://placehold.it/200x200"
+    }
+]

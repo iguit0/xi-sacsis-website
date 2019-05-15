@@ -44,11 +44,11 @@ export default {
   data() {
     return {
       about:
-        "A SACSIS é um evento realizado anualmente na Universidade Federal de Viçosa campus Rio Paranaíba, com o objetivo de amplificar e atualizar a visão de nossos estudantes em relação ao mercado de trabalho e instigar o instinto empreendedor.",
+        "A SACSIS é um evento realizado anualmente pelo curso de Sistemas de Informação da Universidade Federal de Viçosa campus Rio Paranaíba e se encontra na 11ª edição. Possui o objetivo de amplificar e atualizar a visão dos estudantes em relação ao mercado de trabalho, contribuir com conhecimento técnico-científico, além de instigar a inovação e o empreendedorismo.",
       organization:
-        "O evento é organizado pela InfoAlto, Empresa Júnior do curso de Sistemas de Informação, pelo CASI, Centro Acadêmico do curso de Sistemas de Informação, em conjunto com o corpo docente do curso.",
+        "O evento é organizado pela InfoAlto (Empresa Júnior do Curso de Sistemas de informação), CASI (Centro Acadêmico de Sistemas de Informação) e por alguns membros do corpo discente e docente do curso de sistemas de informação da UFV-CRP.",
       content:
-        " Em sua 11ª edição, o evento contará com temas como: empreendedorismo, startups, a indústria de games e desenvolvimento de softwares. Serão várias palestras, minicursos, debates e campeonatos, distribuídos ao longo de cinco dias. Todas as atividades visam o aprimoramento e atualização de conhecimento por parte da comunidade acadêmica, oportunizando a socialização de experiências entre os discentes e profissionais relacionados a àrea de Sistemas de Informação."
+        "O evento contará com temas como: empreendedorismo, startups, indústria de games e softwares em geral. Serão diversas palestras, minicursos, debates e campeonatos, todos distribuídos de 10 a 14 de junho. Todas as atividades visam o aprimoramento e atualização de conhecimento por parte da comunidade acadêmica, permitindo a troca de experiências entre os discentes e profissionais dentro do campo da computação."
     };
   }
 };

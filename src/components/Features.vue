@@ -40,28 +40,28 @@ export default {
           color: "#333",
           icon: "handshake",
           subtitle:
-            "Oferece atividades descontraídas para interação entre os participantes (coffee breaks, campeonatos, etc)."
+            "O evento contribui para a criação de novas relações por meio das atividades que permitem a interação entre os participantes (Palestras, Minicursos, competições, coffee break, etc)."
         },
         {
           title: "Experiências",
           color: "#B8860B",
           icon: "chart-line",
           subtitle:
-            "Foi formulado buscando dinamizar a aquisição de conhecimento e experiências para além do cotidiano da vida acadêmica."
+            "O evento foi formulado com o intuito de dinamizar a aquisição de conhecimento e experiências para além do cotidiano da vida acadêmica."
         },
         {
           title: "Minicursos",
           color: "indigo",
           icon: "chalkboard-teacher",
           subtitle:
-            "Conta com minicursos para aprimoramento com temas atuais, alinhados à formação técnico-científica dos participantes."
+            "O evento conta com minicursos sobre temas relevantes e atuais, permitindo aos participantes adquirirem conhecimentos de suma importância para sua vida profissional."
         },
         {
           title: "Palestras",
           color: "#4169E1",
           icon: "microphone",
           subtitle:
-            "Convidamos referências nacionais nas diversas áreas do conhecimento, com foco em tecnologia da informação."
+            "Visando oferecer uma ampla visão aos participantes, foram convidados profissionais e docentes pertencentes às diversas áreas de conhecimento."
         }
       ]
     };

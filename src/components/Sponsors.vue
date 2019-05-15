@@ -6,8 +6,8 @@
       </span>
       <div class="display-3 text-uppercase hidden-sm-and-down">patrocinadores</div>
       <div class="display-1 text-uppercase hidden-md-and-up">patrocinadores</div>
-      <h2 class="headline pt-1 pb-1 text-uppercase font-weight-light indigo--text">Em breve...</h2>
-      <!--<div class="card-carousel-wrapper" v-if="sponsors && sponsors.length >= 1">
+      <h2>Empresas que apoiaram o evento</h2>
+      <div class="card-carousel-wrapper" v-if="sponsors && sponsors.length >= 1">
         <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :disabled="atHeadOfList"></div>
         <div class="card-carousel">
           <div class="card-carousel--overflow-container">
@@ -27,15 +27,21 @@
         </div>
         <div class="card-carousel--nav__right" @click="moveCarousel(1)" :disabled="atEndOfList"></div>
       </div>
-      <div v-else>Vazio</div>-->
+      <h2
+        v-else
+        class="headline pt-1 pb-1 text-uppercase font-weight-light indigo--text"
+      >Em breve...</h2>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
+import sponsors from "../data/sponsors.json";
+
 export default {
   data() {
     return {
+      sponsors,
       currentOffset: 0,
       windowSize: 5,
       paginationFactor: 220
@@ -45,9 +51,7 @@ export default {
     atEndOfList() {
       return (
         this.currentOffset <=
-        this.paginationFactor *
-          -1 *
-          (this.featuredEstablishments.length - this.windowSize)
+        this.paginationFactor * -1 * (this.sponsors.length - this.windowSize)
       );
     },
     atHeadOfList() {
@@ -154,7 +158,7 @@ export default {
   padding: 3px 0;
   margin: 0;
   margin-bottom: 2px;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 600;
   color: #2c3e50;
   user-select: none;

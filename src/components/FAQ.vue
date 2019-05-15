@@ -39,18 +39,18 @@ export default {
         {
           question: "3. Ganharei horas?",
           answer:
-            "Sim! No final do evento, será emitido um certificado de participação no qual poderá ser utilizado para receber horas extracurriculares."
+            "Sim! No final do evento, será emitido um certificado de participação o qual poderá ser utilizado para receber horas extracurriculares."
         },
         {
           question:
             "4. Se eu me inscrever e não ir às palestras, ganho certificado?",
           answer:
-            "Não, o certificado é emitido mediante comprovação de presença nos eventos/palestras."
+            "Não, o certificado é emitido mediante a comprovação de presença nos eventos/palestras."
         },
         {
           question: "5. Pessoas de outros cursos podem participar?",
           answer:
-            "O evento é aberto a toda comunidade acadêmica, desta forma alunos de outros cursos poderão se inscrever na XI SACSIS. Para alunos de outros cursos e participantes externos, as inscrições poderão ocorrer de maneira integral ou para palestras específicas, de acordo com as áreas de interesse relacionadas a sua formação. Acesso o menu Inscrições -> Outro"
+            "O evento é aberto a toda comunidade acadêmica, desta forma alunos de outros cursos e participantes externos vinculados à UFV poderão se inscrever na XI SACSIS. Para esse grupo, as inscrições poderão ocorrer de maneira integral ou para palestras específicas, de acordo com as áreas de interesse relacionadas a sua formação. Acesse o menu Inscrições."
         }
       ]
     };
