@@ -46,7 +46,7 @@
 
         <img :src="item.img" width="150px" height="150px" style="border-radius: 10px;">
 
-        <v-card-text class="subtitle font-weight-bold">{{ item.tag }}</v-card-text>
+        <v-card-text class="about-text font-weight-bold">{{ item.about }}</v-card-text>
 
         <v-card-actions>
           <v-list-tile class="grow">
@@ -57,8 +57,8 @@
               class="mr-1"
               style="text-decoration: none; color: #FFA000;"
             >
-              <v-btn color="#f3f3f3" small fab v-if="item.facebook">
-                <v-icon color="indigo">fab fa-facebook</v-icon>
+              <v-btn color="#e1e1e1" icon depressed v-if="item.facebook">
+                <v-icon size="20px" color="#3C5A99">fab fa-facebook</v-icon>
               </v-btn>
             </a>
             <a
@@ -68,10 +68,15 @@
               class="ml-2"
               style="text-decoration: none; color: #FFA000;"
             >
-              <v-btn color="#f3f3f3" small fab v-if="item.instagram">
-                <v-icon color="pink">fab fa-instagram</v-icon>
+              <v-btn color="#e1e1e1" depressed icon v-if="item.instagram">
+                <v-icon size="20px" color="#d6249f">fab fa-instagram</v-icon>
               </v-btn>
             </a>
+
+            <span>
+              <v-icon size="20px" color="green">fab fa-whatsapp</v-icon>
+              {{ item.whatsapp }}
+            </span>
 
             <v-layout align-center justify-end>
               <v-icon small>fas fa-map-signs</v-icon>
@@ -243,6 +248,12 @@ export default {
   border-radius: 2px;
   background: white;
   box-shadow: -0px -0px 0px #004977;
+}
+
+.about-text {
+  font-weight: 100;
+  font-size: 15px;
+  font-family: "Kanit", sans-serif !important;
 }
 
 h1 {
