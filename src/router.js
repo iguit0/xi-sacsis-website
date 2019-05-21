@@ -21,6 +21,11 @@ export default new Router({
       component: () => import('./views/Event.vue')
     },
     {
+      path: '/wsis',
+      name: 'wsis',
+      component: () => import('./views/Wsis.vue')
+    },
+    {
       path: '/como-chegar',
       name: 'map',
       component: () => import('./views/Map.vue')

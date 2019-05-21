@@ -5,7 +5,6 @@
     </span>
     <div class="display-3 text-uppercase hidden-sm-and-down">patrocinadores</div>
     <div class="title mt-1 text-uppercase hidden-md-and-up">patrocinadores</div>
-    <div class="subtitle mt-2">Empresas que apoiaram o evento</div>
     <div
       class="mt-4 pb-4 hidden-sm-and-down card-carousel-wrapper"
       v-if="sponsors && sponsors.length"

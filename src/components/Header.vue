@@ -57,6 +57,7 @@
         <v-btn flat to="/">início</v-btn>
         <v-btn flat to="/evento">evento</v-btn>
         <v-btn flat to="/como-chegar">como chegar</v-btn>
+        <v-btn flat to="/wsis">III WSIS</v-btn>
         <v-btn flat @click="redirect" color="yellow">inscrição</v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -76,6 +77,11 @@ export default {
         icon: "fa fa-map-marker-alt",
         title: "como chegar",
         link: "/como-chegar"
+      },
+      {
+        icon: "fas fa-at",
+        title: "iii wsis",
+        link: "/wsis"
       },
       { icon: "fa fa-user-plus", title: "inscrição", link: "/inscricao" }
     ]

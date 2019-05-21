@@ -6,7 +6,7 @@
       </div>
       <h2>Oops! Não achamos essa página</h2>
       <p>A página que você está procurando pode ter sido removida caso seu endereço tenha mudado ou esteja temporariamente indisponível.</p>
-      <v-btn dark depressed round to="/">
+      <v-btn class="mb-4" dark depressed round to="/">
         <v-icon class="mr-1">fa fa-home</v-icon>Voltar a página inicial
       </v-btn>
       <div class="notfound-social">
@@ -18,6 +18,16 @@
         >
           <v-btn fab dark color="#ff6f68">
             <v-icon color="#efefef">fab fa-facebook</v-icon>
+          </v-btn>
+        </a>
+        <a
+          href="https://www.instagram.com/sacsisufv/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #FFA000;"
+        >
+          <v-btn fab dark color="#ff6f68">
+            <v-icon color="#efefef">fab fa-instagram</v-icon>
           </v-btn>
         </a>
       </div>
@@ -94,8 +104,8 @@ export default {
 
 .notfound p {
   font-family: "Kanit", sans-serif;
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 400;
   margin-top: 0px;
   margin-bottom: 18px;
 }

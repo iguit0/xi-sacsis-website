@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 .intro-desc {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   line-height: 25px;
