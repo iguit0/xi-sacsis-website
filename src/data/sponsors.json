@@ -19,41 +19,5 @@
         "icon": "fas fa-utensils",
         "whatsapp": "(34) 9 88509912",
         "img": "https://i.imgsafe.org/e2/e257037c99.png"
-    },
-    {
-        "id": 2,
-        "name": "Patrocinador 3",
-        "tag": "Patrocinador 3",
-        "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "color": "amber",
-        "icon": "fas fa-language",
-        "img": "https://placehold.it/200x200"
-    },
-    {
-        "id": 3,
-        "name": "Patrocinador 4",
-        "tag": "Patrocinador 4",
-        "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "color": "orange",
-        "icon": "fas fa-shopping-cart",
-        "img": "https://placehold.it/200x200"
-    },
-    {
-        "id": 4,
-        "name": "Patrocinador 5",
-        "tag": "Patrocinador 5",
-        "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "color": "indigo",
-        "icon": "fas fa-bed",
-        "img": "https://placehold.it/200x200"
-    },
-    {
-        "id": 5,
-        "name": "Patrocinador 6",
-        "tag": "Patrocinador 6",
-        "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "color": "blue",
-        "icon": "fas fa-laptop",
-        "img": "https://placehold.it/200x200"
     }
 ]

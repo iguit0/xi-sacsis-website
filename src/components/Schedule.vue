@@ -45,7 +45,7 @@
         </v-tabs>
       </div>
       <div v-else class="mt-1 mb-3 pb-5">
-        <h2 class="headline text-uppercase font-weight-light indigo--text">{{ error }} :(</h2>
+        <h2 class="headline text-uppercase font-weight-light indigo--text">Em breve...</h2>
       </div>
     </v-flex>
   </v-layout>
@@ -60,8 +60,8 @@ export default {
   components: { Timeline, ListSchedule },
   data() {
     return {
-      //schedule: [],
-      schedule: [
+      schedule: [],
+      /*schedule: [
         {
           color: "#333",
           type: "credenciamento",
@@ -120,7 +120,7 @@ export default {
           location: "PVA 227",
           description: "Descrição Maratona"
         }
-      ],
+      ],*/
       error: ""
     };
   },
