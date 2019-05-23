@@ -44,7 +44,7 @@
           </v-tab-item>
         </v-tabs>
       </div>
-      <div v-else class="mt-1 mb-3 pb-5">
+      <div v-else class="mt-3 pb-3">
         <h2 class="headline text-uppercase font-weight-light indigo--text">Em breve...</h2>
       </div>
     </v-flex>

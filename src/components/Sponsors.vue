@@ -18,7 +18,7 @@
           >
             <div class="card-carousel--card" v-for="(item) in sponsors" :key="item.id">
               <img :src="item.img" width="200px" height="200px">
-              <div class="card-carousel--card--footer">
+              <div class="card-carousel--card--footer text-uppercase">
                 <p>{{ item.name }}</p>
                 <p>{{ item.tag }}</p>
               </div>
@@ -53,7 +53,6 @@
               :href="item.facebook"
               target="_blank"
               rel="noopener noreferrer"
-              class="mr-1"
               style="text-decoration: none; color: #FFA000;"
             >
               <v-btn color="#e1e1e1" icon depressed v-if="item.facebook">
@@ -64,18 +63,35 @@
               :href="item.instagram"
               target="_blank"
               rel="noopener noreferrer"
-              class="ml-2"
+              class="ml-2 mr-2"
               style="text-decoration: none; color: #FFA000;"
             >
               <v-btn color="#e1e1e1" depressed icon v-if="item.instagram">
                 <v-icon size="20px" color="#d6249f">fab fa-instagram</v-icon>
               </v-btn>
             </a>
-
-            <span>
-              <v-icon size="20px" color="green">fab fa-whatsapp</v-icon>
-              {{ item.whatsapp }}
-            </span>
+            <a
+              :href="`tel:+55${item.whatsapp}`"
+              target="_blank"
+              type="tel"
+              rel="noopener noreferrer"
+              style="text-decoration: none; color: #FFA000;"
+            >
+              <v-btn color="#e1e1e1" depressed icon v-if="item.whatsapp">
+                <v-icon size="18px" color="green">fab fa-whatsapp</v-icon>
+              </v-btn>
+            </a>
+            <a
+              :href="`tel:+55${item.phone}`"
+              target="_blank"
+              type="tel"
+              rel="noopener noreferrer"
+              style="text-decoration: none; color: #FFA000;"
+            >
+              <v-btn color="#e1e1e1" depressed icon v-if="item.phone">
+                <v-icon size="20px" color="#d6249f">fas fa-phone</v-icon>
+              </v-btn>
+            </a>
 
             <v-layout align-center justify-end>
               <v-icon small>fas fa-map-signs</v-icon>
@@ -103,7 +119,7 @@ export default {
   computed: {
     atEndOfList() {
       return (
-        this.currentOffset <= this.paginationFactor * -1 * (6 - this.windowSize)
+        this.currentOffset <= this.paginationFactor * -1 * (7 - this.windowSize)
       );
     },
     atHeadOfList() {
@@ -209,8 +225,8 @@ export default {
   padding: 3px 0;
   margin: 0;
   margin-bottom: 2px;
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
   color: #2c3e50;
   user-select: none;
 }

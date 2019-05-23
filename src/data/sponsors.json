@@ -17,7 +17,59 @@
         "about": "Almoço e Jantar, servimos porções.",
         "color": "#333",
         "icon": "fas fa-utensils",
-        "whatsapp": "(34) 9 88509912",
+        "whatsapp": "34988509912",
         "img": "https://i.imgsafe.org/e2/e257037c99.png"
+    },
+    {
+        "id": 2,
+        "name": "Fisk Rio paranaíba",
+        "tag": "Escola de Idiomas",
+        "about": "Há 60 anos nos dedicando ao ensino de idiomas e sendo referência no segmento.",
+        "color": "#df001f",
+        "icon": "fas fa-language",
+        "img": "https://i.imgsafe.org/62/62c3c33b0a.jpeg",
+        "facebook": "https://www.facebook.com/FISK-Rio-Parana%C3%ADba-405004956273169/"
+    },
+    {
+        "id": 3,
+        "name": "ajas burguer",
+        "tag": "Hamburgueria",
+        "about": "Hamburgueria Artesanal e Lanches em Geral",
+        "color": "#FBC02D",
+        "icon": "fas fa-hamburger",
+        "whatsapp": "3499818111",
+        "img": "https://i.imgsafe.org/62/62f037aff7.png",
+        "facebook": "https://www.facebook.com/FrancisLanches2017/"
+    },
+    {
+        "id": 4,
+        "name": "Uni Informática",
+        "tag": "Informática",
+        "about": "Artigos e Assistências Técnicas em Informática",
+        "color": "#01579B",
+        "icon": "fas fa-desktop",
+        "img": "https://i.imgsafe.org/63/632506dfb2.png",
+        "facebook": "https://www.facebook.com/LojaUniInformaticaMG/",
+        "instagram": "https://instagram.com/uniinformaticamg"
+    },
+    {
+        "id": 5,
+        "name": "Irmãos Cruz",
+        "tag": "Restaurante",
+        "about": "Almoços de Segunda a Segunda das 10:00 às 15:00",
+        "color": "#75b400",
+        "icon": "fas fa-utensils",
+        "img": "https://i.imgsafe.org/63/63493519b4.png",
+        "phone": "3438551535"
+    },
+    {
+        "id": 6,
+        "name": "Uni Telecom",
+        "tag": "Internet",
+        "about": "Serviços de Internet e Telecomunicações em Geral",
+        "color": "#C62828",
+        "icon": "fas fa-at",
+        "img": "https://i.imgsafe.org/63/6333a0ae97.png",
+        "facebook": "https://www.facebook.com/ProvedorUniTelecom/"
     }
 ]
