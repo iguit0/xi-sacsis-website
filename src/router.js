@@ -26,6 +26,11 @@ export default new Router({
       component: () => import('./views/Wsis.vue')
     },
     {
+      path: '/meninasmaismais',
+      name: 'meninas',
+      component: () => import('./views/Meninas.vue')
+    },
+    {
       path: '/como-chegar',
       name: 'map',
       component: () => import('./views/Map.vue')

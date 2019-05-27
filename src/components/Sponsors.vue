@@ -17,7 +17,9 @@
             :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}"
           >
             <div class="card-carousel--card" v-for="(item) in sponsors" :key="item.id">
-              <img :src="item.img" width="200px" height="200px">
+              <a :href="item.contact" target="_blank" rel="noopener noreferrer">
+                <img :src="item.img" width="200px" height="200px">
+              </a>
               <div class="card-carousel--card--footer text-uppercase">
                 <p>{{ item.name }}</p>
                 <p>{{ item.tag }}</p>

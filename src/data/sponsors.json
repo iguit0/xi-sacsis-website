@@ -7,6 +7,7 @@
         "icon": "home",
         "color": "green",
         "facebook": "https://www.facebook.com/RepublicaMacauba/",
+        "contact": "https://www.facebook.com/RepublicaMacauba/",
         "instagram": "https://www.instagram.com/republicamacauba/",
         "img": "https://pbs.twimg.com/profile_images/1183226905/aaaaaaaaaaaaaaa_400x400.jpg"
     },
@@ -28,7 +29,8 @@
         "color": "#df001f",
         "icon": "fas fa-language",
         "img": "https://i.imgsafe.org/62/62c3c33b0a.jpeg",
-        "facebook": "https://www.facebook.com/FISK-Rio-Parana%C3%ADba-405004956273169/"
+        "facebook": "https://www.facebook.com/FISK-Rio-Parana%C3%ADba-405004956273169/",
+        "contact": "https://www.facebook.com/FISK-Rio-Parana%C3%ADba-405004956273169/"
     },
     {
         "id": 3,
@@ -39,7 +41,8 @@
         "icon": "fas fa-hamburger",
         "whatsapp": "3499818111",
         "img": "https://i.imgsafe.org/62/62f037aff7.png",
-        "facebook": "https://www.facebook.com/FrancisLanches2017/"
+        "facebook": "https://www.facebook.com/FrancisLanches2017/",
+        "contact": "https://www.facebook.com/FrancisLanches2017/"
     },
     {
         "id": 4,
@@ -50,6 +53,7 @@
         "icon": "fas fa-desktop",
         "img": "https://i.imgsafe.org/63/632506dfb2.png",
         "facebook": "https://www.facebook.com/LojaUniInformaticaMG/",
+        "contact": "https://www.facebook.com/LojaUniInformaticaMG/",
         "instagram": "https://instagram.com/uniinformaticamg"
     },
     {
@@ -70,6 +74,7 @@
         "color": "#C62828",
         "icon": "fas fa-at",
         "img": "https://i.imgsafe.org/63/6333a0ae97.png",
+        "contact": "https://www.facebook.com/ProvedorUniTelecom/",
         "facebook": "https://www.facebook.com/ProvedorUniTelecom/"
     }
 ]
