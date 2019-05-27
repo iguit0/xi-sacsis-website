@@ -24,14 +24,6 @@ self.__precacheManifest = [
     "url": "/js/chunk-22c30bb7.739243bb.js"
   },
   {
-    "revision": "13820630e5f9ca0b428a",
-    "url": "/css/chunk-272e8f25.b7159da2.css"
-  },
-  {
-    "revision": "13820630e5f9ca0b428a",
-    "url": "/js/chunk-272e8f25.9f1c0ffb.js"
-  },
-  {
     "revision": "63817aa5841919454b51",
     "url": "/js/chunk-2d0cc5e5.8826e344.js"
   },
@@ -44,20 +36,36 @@ self.__precacheManifest = [
     "url": "/js/chunk-5253b97b.33d3290e.js"
   },
   {
-    "revision": "ede23a1e67e7dfb63465",
-    "url": "/js/app.5d84f583.js"
+    "revision": "c58407fcbb7f6b71d963",
+    "url": "/css/chunk-5933fcf8.a7039c74.css"
+  },
+  {
+    "revision": "c58407fcbb7f6b71d963",
+    "url": "/js/chunk-5933fcf8.752d229d.js"
+  },
+  {
+    "revision": "e5617ff3bf585c489bbc",
+    "url": "/css/chunk-919f0c00.ffa6b96d.css"
+  },
+  {
+    "revision": "e5617ff3bf585c489bbc",
+    "url": "/js/chunk-919f0c00.d0238c49.js"
+  },
+  {
+    "revision": "9993d494201f49700ce4",
+    "url": "/js/app.ce12c27a.js"
   },
   {
     "revision": "84054febbe41d8cc17dd",
     "url": "/js/chunk-097580b6.d9496a5e.js"
   },
   {
-    "revision": "964696c69c8401928601",
-    "url": "/css/chunk-vendors.9bd253d7.css"
+    "revision": "c86e3050f900be5d0c35",
+    "url": "/css/chunk-vendors.b0684435.css"
   },
   {
-    "revision": "964696c69c8401928601",
-    "url": "/js/chunk-vendors.a2afd074.js"
+    "revision": "c86e3050f900be5d0c35",
+    "url": "/js/chunk-vendors.bb9cc300.js"
   },
   {
     "revision": "00d81d5aeba479288f1ca750a769ab6c",
@@ -66,6 +74,10 @@ self.__precacheManifest = [
   {
     "revision": "3637b9b37f0fb813931cfa51457a11ad",
     "url": "/img/logo-infoalto.3637b9b3.png"
+  },
+  {
+    "revision": "8f15b22f4b55df1af9f651e2fb18ec99",
+    "url": "/img/meninas.8f15b22f.png"
   },
   {
     "revision": "36d4b87514744f6fc41e996963b465cd",
@@ -84,11 +96,11 @@ self.__precacheManifest = [
     "url": "/img/sacsis-logo-white.c5aa2edb.png"
   },
   {
-    "revision": "7175344d5c5d767edab77bd945f0f02b",
+    "revision": "d5c185b82aec53cb27badbe41581e8d0",
     "url": "/index.html"
   },
   {
-    "revision": "ede23a1e67e7dfb63465",
-    "url": "/css/app.41f84cae.css"
+    "revision": "9993d494201f49700ce4",
+    "url": "/css/app.6b9e285a.css"
   }
 ];
