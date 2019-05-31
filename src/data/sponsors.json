@@ -76,5 +76,16 @@
         "img": "https://i.imgsafe.org/63/6333a0ae97.png",
         "contact": "https://www.facebook.com/ProvedorUniTelecom/",
         "facebook": "https://www.facebook.com/ProvedorUniTelecom/"
+    },
+    {
+        "id": 7,
+        "name": "Mega Cartuchos",
+        "tag": "Gráfica",
+        "about": "Serviços de impressão",
+        "color": "#C62828",
+        "icon": "fas fa-print",
+        "img": "https://i.imgsafe.org/63/6333a0ae97.png",
+        "contact": "https://www.facebook.com/ProvedorUniTelecom/",
+        "facebook": "https://www.facebook.com/ProvedorUniTelecom/"
     }
 ]
