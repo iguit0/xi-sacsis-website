@@ -121,7 +121,7 @@ export default {
   computed: {
     atEndOfList() {
       return (
-        this.currentOffset <= this.paginationFactor * -1 * (7 - this.windowSize)
+        this.currentOffset <= this.paginationFactor * -1 * (9 - this.windowSize)
       );
     },
     atHeadOfList() {
@@ -152,7 +152,7 @@ export default {
 .card-carousel {
   display: flex;
   justify-content: center;
-  width: 870px;
+  width: 1090px;
 }
 .card-carousel--overflow-container {
   overflow: hidden;

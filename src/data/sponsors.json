@@ -80,12 +80,36 @@
     {
         "id": 7,
         "name": "Mega Cartuchos",
-        "tag": "Gráfica",
+        "tag": "Impressões em Geral",
         "about": "Serviços de impressão",
-        "color": "#C62828",
+        "color": "#5F9EA0",
         "icon": "fas fa-print",
-        "img": "https://i.imgsafe.org/63/6333a0ae97.png",
-        "contact": "https://www.facebook.com/ProvedorUniTelecom/",
-        "facebook": "https://www.facebook.com/ProvedorUniTelecom/"
+        "img": "https://i.imgsafe.org/2c/2c471a5689.png",
+        "contact": "https://www.facebook.com/megacartuchos10/",
+        "facebook": "https://www.facebook.com/megacartuchos10/",
+        "phone": "3438558186"
+    },
+    {
+        "id": 8,
+        "name": "Infocop",
+        "tag": "Papelaria",
+        "about": "Artigos Escolares e Papelaria em Geral",
+        "color": "#333",
+        "icon": "fas fa-print",
+        "img": "https://i.imgsafe.org/2c/2c472266d3.png",
+        "contact": "https://www.facebook.com/papelariainfocop/",
+        "facebook": "https://www.facebook.com/papelariainfocop/"
+    },
+    {
+        "id": 9,
+        "name": "FitPower",
+        "tag": "Academia",
+        "about": "Academia com funcionamento de Segunda a Sábado",
+        "color": "#778899",
+        "icon": "fas fa-print",
+        "img": "https://i.imgsafe.org/2c/2c4725a990.png",
+        "contact": "https://www.facebook.com/FitPowerAcadem/",
+        "instagram": "https://www.instagram.com/fitpower_academia",
+        "facebook": "https://www.facebook.com/FitPowerAcadem/"
     }
 ]
