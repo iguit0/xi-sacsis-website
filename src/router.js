@@ -26,6 +26,16 @@ export default new Router({
       component: () => import('./views/Wsis.vue')
     },
     {
+      path: '/csgo',
+      name: 'csgo',
+      component: () => import('./views/Esports.vue')
+    },
+    /*{
+      path: '/futebol',
+      name: 'futebol',
+      component: () => import('./views/Futebol.vue')
+    },*/
+    {
       path: '/meninasmaismais',
       name: 'meninas',
       component: () => import('./views/Meninas.vue')

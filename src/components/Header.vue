@@ -108,12 +108,12 @@ export default {
         icon: "fas fa-futbol",
         title: "campeonato futebol",
         link: "/futebol"
-      },
+      },*/
       {
         icon: "fas fa-headset",
-        title: "campeonato dota 2",
-        link: "/dota2"
-      },*/
+        title: "campeonato csgo",
+        link: "/csgo"
+      },
       {
         icon: "fas fa-at",
         title: "iii wsis",
