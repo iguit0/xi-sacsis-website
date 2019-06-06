@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.8e73e40cde24df461ef65fbe69891fa5.js"
+  "/precache-manifest.699151900a3cf97ffbef47553c185ad2.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "xi-sacsis-website"});
