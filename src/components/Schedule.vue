@@ -6,7 +6,7 @@
       </span>
       <div class="display-3 text-uppercase hidden-sm-and-down">programação</div>
       <div class="title mt-1 text-uppercase hidden-md-and-up">programação</div>
-      <div v-if="schedule && schedule.length">
+      <div v-if="schedule">
         <div
           class="subtitle mt-1 mb-2"
         >Organizamos uma linha do tempo com todos os eventos para você</div>
@@ -38,9 +38,9 @@
             <v-icon>looks_5</v-icon>
           </v-tab>
 
-          <v-tab-item lazy v-for="i in 5" :key="i" :value="'dia-' + i">
-            <Timeline :schedule="schedule" v-if="$vuetify.breakpoint.mdAndUp"/>
-            <ListSchedule :schedule="schedule" v-else/>
+          <v-tab-item lazy v-for="i in 6" :key="i" :value="'dia-' + i">
+            <Timeline :schedule="schedule[i-1]" v-if="$vuetify.breakpoint.mdAndUp"/>
+            <ListSchedule :schedule="schedule[i-1]" v-else/>
           </v-tab-item>
         </v-tabs>
       </div>
@@ -127,7 +127,7 @@ export default {
   methods: {
     getSchedule() {
       api.get("/schedule").then(res => {
-        if (res.status === 200) {
+        if (res.status === 200 || res.status === 201) {
           this.schedule = res.data;
         } else {
           this.error = res.data.message;
@@ -136,7 +136,7 @@ export default {
     }
   },
   mounted() {
-    //this.getSchedule();
+    this.getSchedule();
   }
 };
 </script>

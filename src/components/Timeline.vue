@@ -8,25 +8,48 @@
       large
       fill-dot
     >
-      <template v-slot:icon v-if="event.type === 'palestra' || event.type === 'minicurso'">
+      <template v-slot:icon v-if="event.palestra || event.minicurso">
         <v-avatar>
-          <v-img src="https://place-hold.it/64"/>
+          <v-img :src="event.avatar"/>
         </v-avatar>
       </template>
       <template v-slot:opposite>
-        <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.start_time"></span>
+        <span :class="`headline font-weight-bold`" v-text="event.data_inicio"></span>
         <span
-          v-if="event.end_time"
-          :class="`headline mr-1 ml-1 font-weight-bold ${event.color}--text`"
+          v-if="event.data_fim"
+          :class="`headline mr-1 ml-1 font-weight-bold red--text`"
           v-text="separator"
         ></span>
-        <span :class="`headline font-weight-bold ${event.color}--text`" v-text="event.end_time"></span>
+        <span :class="`headline font-weight-bold`" v-text="event.data_fim"></span>
       </template>
-      <div class="py-3">
+      <div class="py-3" v-if="event.palestra">
+        <div :class="`headline text-uppercase font-weight-bold mb-3`">{{event.palestra}}</div>
+        <p class="subtitle black--text">{{event.ministrante}}</p>
+        <p class="subtitle black--text">{{event.descricao}}</p>
+        <p class="subtitle black--text">
+          <v-icon small>fa fa-map-marker-alt</v-icon>
+          {{event.local}}
+        </p>
+      </div>
+      <div class="py-3" v-else-if="event.minicurso">
+        <div :class="`headline text-uppercase font-weight-bold mb-3`">{{event.minicurso}}</div>
+        <p class="subtitle black--text">{{event.ministrante}}</p>
+        <p class="subtitle black--text">{{event.descricao}}</p>
+        <p class="subtitle black--text">
+          <v-icon small>fa fa-map-marker-alt</v-icon>
+          {{event.local}}
+        </p>
+      </div>
+      <div class="py-3" v-else>
         <div
-          :class="`headline text-uppercase font-weight-bold mb-3 ${event.color}--text`"
-        >{{event.type}}</div>
-        <p class="subtitle black--text">{{event.description}}</p>
+          :class="`headline text-uppercase font-weight-bold mb-3`"
+          v-if="event.titulo"
+        >{{event.titulo}}</div>
+        <p class="subtitle black--text">{{event.descricao}}</p>
+        <p class="subtitle black--text">
+          <v-icon small>fa fa-map-marker-alt</v-icon>
+          {{event.local}}
+        </p>
       </div>
     </v-timeline-item>
   </v-timeline>
@@ -95,7 +118,7 @@ export default {
 
 <style>
 .subtitle {
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }

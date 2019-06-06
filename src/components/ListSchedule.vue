@@ -1,39 +1,43 @@
 <template>
   <div>
-    <v-card
-      class="mx-auto"
-      :color="event.color"
-      v-for="(event, i) in schedule"
-      :key="i"
-      dark
-      max-width="950"
-    >
+    <v-card class="mx-auto" v-for="(event, i) in schedule" :key="i" dark max-width="950">
       <v-card-title>
-        <v-icon left>{{ event.icon }}</v-icon>
-        <span class="title text-uppercase font-weight-light">{{ event.type }}</span>
+        <v-icon left v-if="event.minicurso">fa fa-chalkboard-teacher</v-icon>
+        <v-icon left v-else-if="event.palestra">fa fa-microphone</v-icon>
+        <v-icon left v-else>fa fa-star</v-icon>
+        <span class="subtitle text-uppercase font-weight-light" v-if="event.palestra">palestra</span>
+        <span
+          class="subtitle text-uppercase font-weight-light"
+          v-else-if="event.minicurso"
+        >minicurso</span>
+        <span class="subtitle text-uppercase font-weight-light" v-else>{{ event.titulo }}</span>
       </v-card-title>
 
-      <v-card-text class="subtitle font-weight-bold">{{ event.description }}</v-card-text>
+      <v-card-text class="subtitle font-weight-bold" v-if="event.palestra">{{ event.palestra }}</v-card-text>
+      <v-card-text
+        class="subtitle font-weight-bold"
+        v-else-if="event.minicurso"
+      >{{ event.minicurso }}</v-card-text>
 
       <v-card-text class="subtitle font-weight-bold">
         <v-icon small>fa fa-clock</v-icon>
-        <span class="subheading ml-1">{{event.start_time }} · {{ event.end_time }}</span>
+        <span class="subheading ml-1">{{ event.data_inicio }} · {{ event.data_fim }}</span>
       </v-card-text>
 
-      <v-card-actions v-if="event.type === 'palestra' || event.type === 'minicurso'">
+      <v-card-text class="subtitle font-weight-bold">
+        <v-icon small>fa fa-map-marker-alt</v-icon>
+        <span class="subheading ml-1">{{ event.local }}</span>
+      </v-card-text>
+
+      <v-card-actions v-if="event.palestra || event.minicurso">
         <v-list-tile class="grow">
           <v-list-tile-avatar :color="`${event.color} darken-3`">
-            <v-img class="elevation-6" src="https://place-hold.it/64"></v-img>
+            <v-img class="elevation-6" :src="event.avatar"/>
           </v-list-tile-avatar>
 
           <v-list-tile-content>
-            <v-list-tile-title>{{ event.speaker }}</v-list-tile-title>
+            <v-list-tile-title>{{ event.ministrante }}</v-list-tile-title>
           </v-list-tile-content>
-
-          <v-layout align-center justify-end>
-            <v-icon small>fa fa-map-marker-alt</v-icon>
-            <span class="subheading ml-1">{{ event.location }}</span>
-          </v-layout>
         </v-list-tile>
       </v-card-actions>
 
@@ -41,7 +45,7 @@
         <v-list-tile class="grow">
           <v-layout align-center justify-end>
             <v-icon small>fa fa-map-marker-alt</v-icon>
-            <span class="subheading ml-1">{{ event.location }}</span>
+            <span class="subheading ml-1">{{ event.local }}</span>
           </v-layout>
         </v-list-tile>
       </v-card-actions>
