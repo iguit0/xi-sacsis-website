@@ -104,11 +104,11 @@ export default {
   data: () => ({
     drawer: false,
     attractions: [
-      /*{
+      {
         icon: "fas fa-futbol",
         title: "campeonato futebol",
         link: "/futebol"
-      },*/
+      },
       {
         icon: "fas fa-headset",
         title: "campeonato csgo",

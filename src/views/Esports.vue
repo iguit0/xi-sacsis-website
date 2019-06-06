@@ -8,7 +8,7 @@
     <p class="intro-desc pt-3">
       • Membro participante da SACSIS:
       <strong>R$ 5,00</strong>;
-      <br>• Aluno de Sistemas não paticipante da SACSIS:
+      <br>• Aluno de Sistemas não participante da SACSIS:
       <strong>R$ 10,00</strong>;
       <br>• Aluno de outros cursos não participante da SACSIS:
       <strong>R$ 15,00</strong>;

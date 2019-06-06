@@ -30,11 +30,11 @@ export default new Router({
       name: 'csgo',
       component: () => import('./views/Esports.vue')
     },
-    /*{
+    {
       path: '/futebol',
       name: 'futebol',
       component: () => import('./views/Futebol.vue')
-    },*/
+    },
     {
       path: '/meninasmaismais',
       name: 'meninas',
