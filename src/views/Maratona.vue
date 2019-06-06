@@ -1,25 +1,22 @@
 <template>
   <div class="wsis-info py-4">
     <span>
-      <v-icon color="indigo" size="40px">fas fa-futbol</v-icon>
+      <v-icon color="indigo" size="40px">fas fa-code</v-icon>
     </span>
-    <div class="display-3 text-uppercase hidden-sm-and-down">II Copa de Futsal da SACSIS</div>
-    <div class="title mt-1 text-uppercase hidden-md-and-up">II Copa de Futsal da SACSIS</div>
+    <div class="display-3 text-uppercase hidden-sm-and-down">V Maratona de Programação</div>
+    <div class="title mt-1 text-uppercase hidden-md-and-up">V Maratona de Programação</div>
     <p class="intro-desc pt-3">
       • Membro participante da SACSIS:
       <strong>R$ 5,00</strong>;
       <br>• Aluno de Sistemas não participante da SACSIS:
       <strong>R$ 10,00</strong>;
-      <br>• Aluno de outros cursos não participante da SACSIS:
+      <br>• Aluno de outro curso não participante da SACSIS:
       <strong>R$ 15,00</strong>;
     </p>
-    <div class="title mt-1 text-uppercase">
+    <div class="title mt-1 mb-3 text-uppercase">
       Premiação: Total da arrecadação de todas as equipes
       <br>
     </div>
-    <p class="intro-desc pt-3">
-      <strong>OBS.: Cada time pode inscrever no máximo 10 jogadores.</strong>
-    </p>
     <span>
       <v-icon color="indigo" size="40px">fas fa-calendar-check</v-icon>
     </span>
@@ -27,9 +24,9 @@
     <div class="title mt-1 text-uppercase hidden-md-and-up">datas</div>
     <p class="intro-desc pt-3">
       • Prazo final para a inscrição das equipes:
-      <strong>9 de junho de 2019</strong>;
-      <br>• Partidas acontecerão entre:
-      <strong>10 e 11 de junho de 2019</strong>;
+      <strong>12 de junho de 2019 às 23:59</strong>;
+      <br>• Evento acontecerá nos dias:
+      <strong>14 de junho de 2019 a partir das 8:00 no PVA 226 e 227</strong>;
       <br>
     </p>
 
@@ -58,15 +55,13 @@
 
 <script>
 export default {
-  name: "futebol",
+  name: "maratona",
   methods: {
     redirectForms() {
-      window.open(
-        "https://docs.google.com/forms/d/1NKqjGomU_vlktzuHe4PJ1WZsFgWeKJEXYxUP13CYEbI?fbclid=IwAR1jszpETDSjDo04ecqEzIWijEI59H52FsQIQt55uu8rcFGT-KKNsEJdylA"
-      );
+      window.open("https://kutt.it/Ynv8sd");
     },
     redirect() {
-      window.open("https://kutt.it/hoFa0b");
+      window.open("https://kutt.it/Ryfeao");
     }
   }
 };

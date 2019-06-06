@@ -31,6 +31,11 @@ export default new Router({
       component: () => import('./views/Esports.vue')
     },
     {
+      path: '/maratona',
+      name: 'maratona',
+      component: () => import('./views/Maratona.vue')
+    },
+    {
       path: '/futebol',
       name: 'futebol',
       component: () => import('./views/Futebol.vue')

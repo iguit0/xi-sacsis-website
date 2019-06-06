@@ -105,6 +105,11 @@ export default {
     drawer: false,
     attractions: [
       {
+        icon: "fas fa-code",
+        title: "maratona",
+        link: "/maratona"
+      },
+      {
         icon: "fas fa-futbol",
         title: "campeonato futebol",
         link: "/futebol"
