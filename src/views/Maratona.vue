@@ -5,18 +5,6 @@
     </span>
     <div class="display-3 text-uppercase hidden-sm-and-down">V Maratona de Programação</div>
     <div class="title mt-1 text-uppercase hidden-md-and-up">V Maratona de Programação</div>
-    <p class="intro-desc pt-3">
-      • Membro participante da SACSIS:
-      <strong>R$ 5,00</strong>;
-      <br>• Aluno de Sistemas não participante da SACSIS:
-      <strong>R$ 10,00</strong>;
-      <br>• Aluno de outro curso não participante da SACSIS:
-      <strong>R$ 15,00</strong>;
-    </p>
-    <div class="title mt-1 mb-3 text-uppercase">
-      Premiação: Total da arrecadação de todas as equipes
-      <br>
-    </div>
     <span>
       <v-icon color="indigo" size="40px">fas fa-calendar-check</v-icon>
     </span>
