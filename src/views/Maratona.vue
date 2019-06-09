@@ -3,8 +3,8 @@
     <span>
       <v-icon color="indigo" size="40px">fas fa-code</v-icon>
     </span>
-    <div class="display-3 text-uppercase hidden-sm-and-down">V Maratona de Programação</div>
-    <div class="title mt-1 text-uppercase hidden-md-and-up">V Maratona de Programação</div>
+    <div class="display-3 mt-1 mb-3 text-uppercase hidden-sm-and-down">V Maratona de Programação</div>
+    <div class="title mt-1 mb-3 text-uppercase hidden-md-and-up">V Maratona de Programação</div>
     <span>
       <v-icon color="indigo" size="40px">fas fa-calendar-check</v-icon>
     </span>

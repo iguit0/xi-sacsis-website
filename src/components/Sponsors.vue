@@ -121,7 +121,8 @@ export default {
   computed: {
     atEndOfList() {
       return (
-        this.currentOffset <= this.paginationFactor * -1 * (9 - this.windowSize)
+        this.currentOffset <=
+        this.paginationFactor * -1 * (15 - this.windowSize)
       );
     },
     atHeadOfList() {

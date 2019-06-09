@@ -23,6 +23,18 @@
     },
     {
         "id": 2,
+        "name": "Dallas Hotel",
+        "tag": "Hotel",
+        "about": "Sinta-se em casa em um de nossos 101 quartos com ar-condicionado, chuveiros com aquecimento solar, escrivaninha e telefone. Link de acesso à internet por fibra ótica, e mais uma completa programação de TV diversificada para sua diversão.",
+        "color": "#008080",
+        "icon": "fas fa-hotel",
+        "img": "https://i.imgsafe.org/c6/c66f901407.png",
+        "phone": "3438553838",
+        "facebook": "https://www.facebook.com/dallaspalacehotelrioparanaiba/",
+        "contact": "https://www.facebook.com/dallaspalacehotelrioparanaiba/"
+    },
+    {
+        "id": 3,
         "name": "Fisk Rio paranaíba",
         "tag": "Escola de Idiomas",
         "about": "Há 60 anos nos dedicando ao ensino de idiomas e sendo referência no segmento.",
@@ -33,7 +45,7 @@
         "contact": "https://www.facebook.com/FISK-Rio-Parana%C3%ADba-405004956273169/"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "ajas burguer",
         "tag": "Hamburgueria",
         "about": "Hamburgueria Artesanal e Lanches em Geral",
@@ -45,7 +57,7 @@
         "contact": "https://www.facebook.com/FrancisLanches2017/"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Uni Informática",
         "tag": "Informática",
         "about": "Artigos e Assistências Técnicas em Informática",
@@ -57,7 +69,7 @@
         "instagram": "https://instagram.com/uniinformaticamg"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Irmãos Cruz",
         "tag": "Restaurante",
         "about": "Almoços de Segunda a Segunda das 10:00 às 15:00",
@@ -67,7 +79,7 @@
         "phone": "3438551535"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Uni Telecom",
         "tag": "Internet",
         "about": "Serviços de Internet e Telecomunicações em Geral",
@@ -78,7 +90,7 @@
         "facebook": "https://www.facebook.com/ProvedorUniTelecom/"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Mega Cartuchos",
         "tag": "Impressões em Geral",
         "about": "Serviços de impressão",
@@ -90,7 +102,7 @@
         "phone": "3438558186"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Infocop",
         "tag": "Papelaria",
         "about": "Artigos Escolares e Papelaria em Geral",
@@ -101,15 +113,74 @@
         "facebook": "https://www.facebook.com/papelariainfocop/"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "FitPower",
         "tag": "Academia",
         "about": "Academia com funcionamento de Segunda a Sábado",
         "color": "#778899",
-        "icon": "fas fa-print",
+        "icon": "fas fa-dumbbell",
         "img": "https://i.imgsafe.org/2c/2c4725a990.png",
         "contact": "https://www.facebook.com/FitPowerAcadem/",
         "instagram": "https://www.instagram.com/fitpower_academia",
         "facebook": "https://www.facebook.com/FitPowerAcadem/"
+    },
+    {
+        "id": 11,
+        "name": "Molho, Massas e Petiscos",
+        "tag": "Lanches",
+        "about": "Lanches, Jantinhas, Pizzas e Massas em Geral",
+        "color": "#191970",
+        "icon": "fas fa-utensils",
+        "img": "https://i.imgsafe.org/c6/c6789e9398.png",
+        "contact": "https://www.facebook.com/molho.massas",
+        "whatsapp": "34996529146",
+        "facebook": "https://www.facebook.com/molho.massas"
+    },
+    {
+        "id": 12,
+        "name": "Seu João Barbearia",
+        "tag": "Barbearia",
+        "about": "Seu João Barbearia, além de cabelo e barba também temos produtos para cuidado do seu visual, um estúdio de tatuagem e muito mais!",
+        "color": "#006400",
+        "icon": "fas fa-cut",
+        "img": "https://i.imgsafe.org/c6/c6a54d71b9.png",
+        "contact": "https://www.facebook.com/seujoaobarbearia/",
+        "instagram": "https://www.instagram.com/seujoaobarbearia/",
+        "facebook": "https://www.facebook.com/seujoaobarbearia/",
+        "whatsapp": "3496884981"
+    },
+    {
+        "id": 13,
+        "name": "Shopping Eldorado",
+        "tag": "Lojas",
+        "about": "O Shopping Eldorado é a rede de lojas especializada em roupas e calçados. A melhor da região do Alto Paranaíba.",
+        "color": "#6A5ACD",
+        "icon": "fas fa-shopping-bag",
+        "img": "https://i.imgsafe.org/c6/c67f8b61c7.png",
+        "contact": "https://www.facebook.com/shoppingeldorado/",
+        "facebook": "https://www.facebook.com/shoppingeldorado/",
+        "phone": "3438551445"
+    },
+    {
+        "id": 14,
+        "name": "Sorveteria Central",
+        "tag": "Sorveteria",
+        "about": "A 17 anos servindo produtos de qualidade pra você e sua família",
+        "color": "#4169E1",
+        "icon": "fas fa-ice-cream",
+        "img": "https://i.imgsafe.org/c6/c6b4bdf32d.png",
+        "facebook": "https://www.facebook.com/Sorveteria-Central-Rio-1675024822711797/",
+        "instagram": "https://www.instagram.com/sorveteriacentralrio/",
+        "phone": "3438551051"
+    },
+    {
+        "id": 15,
+        "name": "Ponto Chik Festas",
+        "tag": "Disk Bebidas",
+        "about": "Bebidas em geral",
+        "color": "#3CB371",
+        "icon": "fas fa-beer",
+        "img": "https://i.imgsafe.org/c6/c6b897b466.png",
+        "phone": "3438551757"
     }
 ]
