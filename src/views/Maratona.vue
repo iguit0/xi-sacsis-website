@@ -5,6 +5,12 @@
     </span>
     <div class="display-3 mt-1 mb-3 text-uppercase hidden-sm-and-down">V Maratona de Programação</div>
     <div class="title mt-1 mb-3 text-uppercase hidden-md-and-up">V Maratona de Programação</div>
+    <p class="intro-desc pt-3">
+      • Premiação Iniciante:
+      <strong>R$ 300,00</strong>
+      <br>• Premiação Avançado:
+      <strong>R$ 600,00</strong>
+    </p>
     <span>
       <v-icon color="indigo" size="40px">fas fa-calendar-check</v-icon>
     </span>
