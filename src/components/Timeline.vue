@@ -30,6 +30,9 @@
           <v-icon small>fa fa-map-marker-alt</v-icon>
           {{event.local}}
         </p>
+        <v-btn outline small round color="blue" @click="openModal(event.id)">
+          <v-icon name="info-circle" class="mr-1"/>Mais informações
+        </v-btn>
       </div>
       <div class="py-3" v-else-if="event.minicurso">
         <div :class="`headline text-uppercase font-weight-bold mb-3`">{{event.minicurso}}</div>
@@ -39,6 +42,9 @@
           <v-icon small>fa fa-map-marker-alt</v-icon>
           {{event.local}}
         </p>
+        <v-btn outline small round color="blue" @click="openModal(event.id)">
+          <v-icon name="info-circle" class="mr-1"/>Mais informações
+        </v-btn>
       </div>
       <div class="py-3" v-else>
         <div
@@ -56,8 +62,32 @@
 </template>
 
 <script>
+import InfoModal from "./InfoModal";
+import api from "@/services/api";
+
 export default {
   props: ["schedule"],
+  methods: {
+    openModal(id) {
+      console.log('apertou');
+      api.get("/schedule/info/" + id).then(res => {
+        if (res.status === 200) {
+          //console.log(res.data);
+          this.$modal.show(
+            InfoModal,
+            {
+              schedule: res.data
+            },
+            {
+              draggable: false,
+              width: 850,
+              height: 510
+            }
+          );
+        }
+      });
+    }
+  },
   data: () => ({
     separator: "·"
     /*schedule: [
@@ -116,6 +146,13 @@ export default {
 };
 </script>
 
+<style scoped>
+@media only screen and (max-width: 768px) {
+  .infoBtn {
+    display: none;
+  }
+}
+</style>
 <style>
 .subtitle {
   font-size: 17px;

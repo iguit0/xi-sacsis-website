@@ -11,6 +11,9 @@
         </v-btn>
       </back-to-top>
       <Footer/>
+
+      <!-- Dialogs -->
+      <modals-container />
     </v-app>
   </div>
 </template>

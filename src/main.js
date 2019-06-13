@@ -7,6 +7,7 @@ import './registerServiceWorker'
 import './plugins/vuetify'
 import './plugins/leaflet'
 import './plugins/back-to-top'
+import './plugins/vmodal'
 import VueAnalytics from 'vue-analytics'
 
 Vue.config.productionTip = false
