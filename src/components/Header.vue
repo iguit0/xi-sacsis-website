@@ -73,9 +73,9 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat to="/">início</v-btn>
-        <v-btn flat to="/evento">evento</v-btn>
-        <v-btn flat to="/como-chegar">como chegar</v-btn>
+        <v-btn flat :to="items[0].link">início</v-btn>
+        <v-btn flat :to="items[1].link">evento</v-btn>
+        <v-btn flat :to="items[2].link">como chegar</v-btn>
         <v-menu offset-y auto light open-on-hover>
           <template v-slot:activator="{ on }">
             <v-btn flat v-on="on">atrações</v-btn>
@@ -99,6 +99,8 @@
 </template>
 
 <script>
+import { appUri, prefix } from '../global.js'
+
 export default {
   name: "Header",
   data: () => ({
@@ -107,43 +109,43 @@ export default {
       {
         icon: "fas fa-code",
         title: "maratona",
-        link: "/maratona"
+        link: prefix+"/maratona"
       },
       {
         icon: "fas fa-futbol",
         title: "campeonato futebol",
-        link: "/futebol"
+        link: prefix+"/futebol"
       },
       {
         icon: "fas fa-headset",
         title: "campeonato csgo",
-        link: "/csgo"
+        link: prefix+"/csgo"
       },
       {
         icon: "fas fa-at",
         title: "iii wsis",
-        link: "/wsis"
+        link: prefix+"/wsis"
       },
       {
         icon: "fas fa-plus-circle",
         title: "meninas++",
-        link: "/meninasmaismais"
+        link: prefix+"/meninasmaismais"
       }
     ],
     items: [
-      { icon: "fa fa-home", title: "início", link: "/" },
-      { icon: "fa fa-building", title: "evento", link: "/evento" },
+      { icon: "fa fa-home", title: "início", link: prefix+"/" },
+      { icon: "fa fa-building", title: "evento", link: prefix+"/evento" },
       {
         icon: "fa fa-map-marker-alt",
         title: "como chegar",
-        link: "/como-chegar"
+        link: prefix+"/como-chegar"
       },
-      { icon: "fa fa-user-plus", title: "inscrição", link: "/inscricao" }
+      { icon: "fa fa-user-plus", title: "inscrição", link: prefix+"/inscricao" }
     ]
   }),
   methods: {
     redirect() {
-      window.open("https://app.sacsis.tech");
+      window.open(appUri);
     }
   }
 };
